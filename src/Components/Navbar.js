@@ -29,7 +29,7 @@ const Navbar = () => {
       icon: <InfoIcon />,
     },
     {
-      text: "Interns",
+      text: "Chapters",
       icon: <CommentRoundedIcon />,
     },
     {
@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="navbar-links-container">
         <a href="./Home.js">Home</a>
         <a href="">About</a>
-        <a href="https://forms.gle/SSmC6bc24YJJWNtP6">Interns</a>
+        <a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a>
         <a href="./Contact.js">Contact</a>
         {/* <a href="">
           <BsCart2 className="navbar-cart-icon" />
