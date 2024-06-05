@@ -1,0 +1,80 @@
+import React, { useState, useEffect } from 'react';
+import { Link,NavLink } from "react-router-dom";
+
+export default function NavBar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState(false);
+  const [menuDisplay, setMenuDisplay] = useState('none');
+
+  const toggleMenu = () => {
+    setMenuDisplay(menuDisplay === 'flex' ? 'none' : 'flex');
+    setActive(!active);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.pageYOffset > 60);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className="wrapper">
+        <nav className={scrolled ? 'scrolled' : ''}>
+        <a href="home" ><div className="logo">Project UCode</div></a>
+          <ul>
+            <li className="navLet">
+                <a href="home">Home</a>
+            </li>
+            <li className="navLet">
+              <a href="about">About</a>
+            </li>
+            <li className="navLet">
+              <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a>
+            </li>
+            <li className="navLet">
+              <a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a>
+            </li>
+            <li className="navLet">
+              <a href="#">Donate</a>
+            </li>
+            <li className="navLet">
+              <a href="mailto:support@projectucode.org">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" className="btn dark">Join</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav className={`mobile-nav ${scrolled ? 'scrolled' : ''}`}>
+          <div className="logo">Project UCode</div>
+          <div className="menu-icon" onClick={toggleMenu}>
+            <img src="images/menu-icon.svg" alt="Menu Icon" />
+          </div>
+        </nav>
+
+        <div className={`mobile-menu-container ${active ? 'active' : ''}`} id="mobileMenu">
+          <div className="close-icon" onClick={toggleMenu}>
+            <img src="images/close-icon.svg" alt="Close Icon" />
+          </div>
+          <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a></li>
+            <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="mailto:support@projectucode.org">Contact Us</a></li>
+            <li><a href="#" className="btn dark">Join</a></li>
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+}
