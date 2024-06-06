@@ -50,7 +50,7 @@ a {
 }
 
 .btn.enroll-icon::before {
-  content: url("/public/Images/enroll-now-icon.svg");
+  content: url("Images/enroll-now-icon.svg");
   position: absolute;
   top: 50%;
   left: 32px;
