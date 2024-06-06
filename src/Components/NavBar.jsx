@@ -56,7 +56,7 @@ export default function NavBar() {
         <nav className={`mobile-nav ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">Project UCode</div>
           <div className="menu-icon" onClick={toggleMenu}>
-            <img src="images/menu-icon.svg" alt="Menu Icon" />
+            <img src="Images/menu-icon.svg" alt="Menu Icon" />
           </div>
         </nav>
 
