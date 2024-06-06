@@ -68,7 +68,7 @@ export default function Footer() {
                     </div>
                     </div>
 
-                    <p className="copyright">This website is developed by Project UCode.</p>
+                    <p className="copyright">This website is developed by Project UCode</p>
                 </div>
             </footer>
         </>
