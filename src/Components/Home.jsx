@@ -68,7 +68,7 @@ export default function Home() {
 
             <div className="course-cards">
             <div className="course-card">
-                <img src="images/course-1.jpg" alt="" />
+                <img src="Images/course-1.jpg" alt="" />
 
                 <div className="info">
                 <h3>Python Fundamentals</h3>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
 
             <div className="course-card">
-                <img src="images/course-2.png" alt="" />
+                <img src="Images/course-2.png" alt="" />
 
                 <div className="info">
                 <h3>Java Fundamentals</h3>
