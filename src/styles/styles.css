@@ -36,6 +36,11 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 .btn.dark {
   background: var(--dark-blue-color);
 }
@@ -62,7 +67,18 @@ body {
 
 /* Header */
 
+#aboutHeader {
+  height: 50vh;
+  background-image: url("/public/Images/homeBackAbout.png");
+}
 
+#homeHeader {
+  background-size: cover; /* Adjust to your preference */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
 
 header ul li a:hover {
   color: white;
@@ -109,8 +125,13 @@ nav {
   transition: all 500ms ease;
 }
 
+.navLet {
+  transition: transform 0.25s ease-in-out;
+}
+
 .navLet:hover {
   color:var(--dark-color);
+  transform: scale(1.2);
 }
 
 nav.scrolled {
@@ -146,12 +167,30 @@ nav ul li a {
 
 /* Hero Section */
 
-.hero-section {
+#homeHeroSection {
   display: flex;
   width: 100%;
   align-items: center;
   padding-top: 60px;
   position: relative;
+  color: #fff;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+#abt_txt {
+  font-size: 12vh;
+}
+
+#aboutHeroSection {
+  height: 50vh;
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
   color: #fff;
 }
 
@@ -161,6 +200,7 @@ nav ul li a {
   font-size: 50px;
   line-height: 125%;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .hero-section .left p {
@@ -184,6 +224,21 @@ nav ul li a {
   height: 520px;
   vertical-align: middle;
 }
+
+/* Team Names */
+.team {
+  margin-top: 2vh;
+}
+
+.ateam {
+  justify-content: center;
+  margin-bottom: 8vh;
+}
+
+.ateam h2 {
+  font-size: 8vh;
+}
+
 
 /* Achievement Cards */
 
@@ -454,6 +509,21 @@ section p {
   right: 0;
 }
 
+h4 {
+  margin-left: 2vh;
+  margin-right: 2vh;
+  line-height: 4vh;
+  text-align: center;
+  color: white;
+  margin-top: 2.5vh;
+  font-size: 2vh;
+  font-weight: normal;
+}
+
+#whatWeDoSection {
+    background: linear-gradient(180deg, #47756f 0%, #13092e 100%);
+}
+
 /* App Section */
 
 .app-section {
@@ -490,6 +560,12 @@ footer {
   background: var(--dark-color);
   color: #fff;
   padding: 70px 0;
+}
+
+#pushUp {
+  max-width: 1134px;
+  margin: 0 auto;
+  margin-bottom: 5lh;
 }
 
 footer a {
@@ -564,6 +640,12 @@ footer .copyright {
 nav.mobile-nav,
 .mobile-menu-container {
   display: none;
+}
+
+@media (min-width: 801px) {
+  #homeHeader {
+    background-image: url("/public/Images/homeBack.png");
+  }
 }
 
 @media (max-width: 1100px) {
@@ -761,6 +843,17 @@ nav.mobile-nav,
     cursor: pointer;
   }
 
+  #homeHeader {
+    background-image: url("/public/Images/mobile-home.png");
+  }
+
+  .hero-section .left {
+    margin-top: 3lh;
+    margin-left: 2lh;
+    margin-right: 2lh;
+    justify-content: normal;
+  }
+
   .mobile-menu-container {
     position: fixed;
     height: 100vh;
@@ -847,6 +940,7 @@ nav.mobile-nav,
 
   /* Courses Section */
   .courses-section h2,
+  
   .team h2 {
     font-size: 6vh;
     margin-bottom: 2vh;
@@ -856,12 +950,6 @@ nav.mobile-nav,
     font-size: 3vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
-  }
-
-  #whatTxt {
-    margin-left: 2vh;
-    margin-right: 2vh;
-    line-height: 4vh;
   }
 
   #who-we-are {

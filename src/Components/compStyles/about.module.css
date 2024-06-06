@@ -3,17 +3,6 @@ header {
     background-image: url("/public/Images/homeBackAbout.png");
 }
 
-.hero-section {
-    height: 50vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-#abt_txt {
-    font-size: 12vh;
-}
-
 .courses-section p {
     text-align: center;
     color: white;
@@ -24,9 +13,12 @@ header {
     background: linear-gradient(180deg, #47756f 0%, #13092e 100%);
 }
 
-#whatTxt {
-    font-size: 2vh;
+
+
+#abt_txt {
+    font-size: 12vh;
 }
+  
 
 .team {
     margin-top: 2vh;
@@ -40,7 +32,3 @@ header {
 .ateam h2 {
     font-size: 8vh;
 }
-
-footer {
-        margin-top: 5lh;
-      }
