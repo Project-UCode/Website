@@ -37,7 +37,7 @@ export default function Home() {
         <div className="wrapper">
         <section className="testimonials-section">
             <div className="left homeLeft">
-                <img className="who-are-we-image" id="learn-home" src="/public/Images/ucodelearn.png" alt="" />
+                <img className="who-are-we-image" id="learn-home" src="Images/ucodelearn.png" alt="" />
             </div>
 
             <div className="right about-us-section">
