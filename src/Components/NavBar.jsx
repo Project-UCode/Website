@@ -62,7 +62,7 @@ export default function NavBar() {
 
         <div className={`mobile-menu-container ${active ? 'active' : ''}`} id="mobileMenu">
           <div className="close-icon" onClick={toggleMenu}>
-            <img src="images/close-icon.svg" alt="Close Icon" />
+            <img src="Images/close-icon.svg" alt="Close Icon" />
           </div>
           <ul>
             <li><a href="home">Home</a></li>
