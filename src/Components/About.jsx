@@ -18,7 +18,7 @@ export default function About() {
         <div className="wrapper">
             <section className="testimonials-section">
             <div className="left">
-                <img src="images/ucodemission.png" alt="" />
+                <img src="Images/ucodemission.png" alt="mission-photo" />
             </div>
 
             <div className="right">
@@ -59,7 +59,7 @@ export default function About() {
 
             <section className="testimonials-section team abtTeam">
             <div className="left">
-                <img src="images/akhilphoto.png" alt="" />
+                <img src="Images/akhilphoto.png" alt="akhil-photo" />
             </div>
 
             <div className="right">
@@ -75,7 +75,7 @@ export default function About() {
 
             <section className="testimonials-section team abtTeam">
             <div className="left">
-                <img src="images/puranjayphoto.png" alt="" />
+                <img src="Images/puranjayphoto.png" alt="puranjay-photo" />
             </div>
 
             <div className="right">
