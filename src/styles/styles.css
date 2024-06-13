@@ -4,7 +4,7 @@
     --dark-color: #171a3f;
     --light-color: #e8f7fb;
     --light-blue-color: #6f7dfb;
-    --orange-color: #cf8036;
+    --hover-color: #0a163b;
   }
   
 *,
@@ -62,7 +62,7 @@ a {
 }
 
 .btn:hover {
-  background-color: var(--orange-color);
+  background-color: var(--hover-color);
 }
 
 /* Header */
