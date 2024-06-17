@@ -1,87 +1,87 @@
 :root {
-    --blue-color: #201c51;
-    --dark-blue-color: #023047;
-    --dark-color: #171a3f;
-    --light-color: #e8f7fb;
-    --light-blue-color: #6f7dfb;
-    --hover-color: #0a163b;
-  }
-  
+  --blue-color: #201c51;
+  --dark-blue-color: #023047;
+  --dark-color: #171a3f;
+  --light-color: #e8f7fb;
+  --light-blue-color: #d0d3ec;
+  --hover-color: #0a163b;
+}
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
+margin: 0;
+font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
-  max-width: 1134px;
-  margin: 0 auto;
+max-width: 1134px;
+margin: 0 auto;
 }
 
 /* Buttons */
 
 .btn {
-  padding: 16px 32px;
-  border-radius: 24px;
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
-  position: relative;
+padding: 16px 32px;
+border-radius: 24px;
+color: #fff;
+display: inline-block;
+font-weight: bold;
+font-size: 16px;
+text-decoration: none;
+position: relative;
 }
 
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 
 .btn.dark {
-  background: var(--dark-blue-color);
+background: var(--dark-blue-color);
 }
 
 .btn.light {
-  background: var(--blue-color);
+background: var(--blue-color);
 }
 
 .btn.enroll-icon::before {
-  content: url("/public/Images/enroll-now-icon.svg");
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  transform: translateY(-50%);
+content: url("/public/Images/enroll-now-icon.svg");
+position: absolute;
+top: 50%;
+left: 32px;
+transform: translateY(-50%);
 }
 
 .btn.enroll-icon {
-  padding-left: 60px;
+padding-left: 60px;
 }
 
 .btn:hover {
-  background-color: var(--hover-color);
+background-color: var(--hover-color);
 }
 
 /* Header */
 
 #aboutHeader {
-  height: 50vh;
-  background-image: url("/public/Images/homeBackAbout.png");
+height: 50vh;
+background-image: url("/public/Images/homeBackAbout.png");
 }
 
 #homeHeader {
-  background-size: cover; /* Adjust to your preference */
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  width: 100%;
+background-size: cover; /* Adjust to your preference */
+background-repeat: no-repeat;
+background-position: center center;
+height: 100vh;
+width: 100%;
 }
 
 header ul li a:hover {
-  color: white;
+color: white;
 }
 
 /* submenu style */
@@ -94,23 +94,25 @@ header ul .submenu {
   z-index: -999;
   transition: all ease 0.5s;
   border-radius: 5px;
+  text-align: left;
 }
 
-header ul li:hover .submenu {
+header ul li:hover .submenu,
+header ul li .submenu:hover {
   z-index: 99;
   opacity: 1;
   margin-top: 0;
 }
 
 header ul .submenu li{
-  margin: 0;
-  width: 100%;
+margin: 0;
+width: 100%;
 }
 
 header ul .submenu li a{
-  padding: 15px 20px;
-  display: inline-block;
-  width: 100%
+padding: 15px 20px;
+display: inline-block;
+width: 100%
 }
 
 nav {
@@ -123,693 +125,745 @@ nav {
   padding: 36px 0;
   z-index: 100;
   transition: all 500ms ease;
+  
+  .navLet:hover ul,
+  .navLet:focus ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .navDrop {
+    a {
+      color: var(--hover-color);
+    }
+    position: absolute;
+    
+    left: -1rem;
+    background-color: var(--light-color);
+    box-shadow: 0 0 5px var(--hover-color);
+    /* border: 1px solid var(--blue-color); */
+    border-radius: 10px;
+    width: 7rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 10%;
+    visibility: hidden; 
+    transition: opacity 200ms ease-in-out;
+    align-items: start;
+    
+    li {
+      list-style: none;
+      border-radius: 2px;
+      transition: background-color 1ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        width: 6rem;
+        background-color: var(--light-blue-color);
+      }
+    }
+  }
+}
+
+.twoEl {
+  top: 1rem;
+}
+
+.threeEl {
+  top: .9rem;
 }
 
 .navLet {
-  transition: transform 0.25s ease-in-out;
+transition: transform 0.25s ease-in-out;
+cursor: pointer;
 }
 
 .navLet:hover {
-  color:var(--dark-color);
-  transform: scale(1.2);
+color:var(--dark-color);
+transform: scale(1.2);
+.navDrop {
+  transform: scale(0.8);
+}
 }
 
 nav.scrolled {
-  background: var(--dark-color);
-  box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
-  border-radius: 0 0 8px 8px;
-  top: 0;
-  padding: 12px;
+background: var(--dark-color);
+box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+border-radius: 0 0 8px 8px;
+top: 0;
+padding: 12px;
 }
 
 nav .logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  color: #ffffff;
+font-family: "Raleway", sans-serif;
+font-weight: 900;
+font-size: 40px;
+color: #ffffff;
 }
 
 nav ul {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
-  margin: 0;
+display: flex;
+align-items: center;
+gap: 40px;
+list-style: none;
+margin: 0;
 }
 
 nav ul li a {
-  font-weight: bold;
-  font-size: 16px;
-  color: #ffffff;
-  text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+color: #ffffff;
+text-decoration: none;
 }
 
 /* Hero Section */
 
 #homeHeroSection {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding-top: 60px;
-  position: relative;
-  color: #fff;
-  height: 100vh;
-  justify-content: space-between;
+display: flex;
+width: 100%;
+align-items: center;
+padding-top: 60px;
+position: relative;
+color: #fff;
+height: 100vh;
+justify-content: space-between;
 }
 
 #abt_txt {
-  font-size: 12vh;
+font-size: 12vh;
 }
 
 #aboutHeroSection {
-  height: 50vh;
-  width: 100%;
-  padding-top: 60px;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  color: #fff;
+height: 50vh;
+width: 100%;
+padding-top: 60px;
+text-align: center;
+align-items: center;
+display: flex;
+position: relative;
+justify-content: center;
+color: #fff;
 }
 
 .hero-section .left h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 125%;
-  margin-bottom: 0;
-  margin-top: 0;
+font-family: "Raleway", sans-serif;
+font-weight: 900;
+font-size: 50px;
+line-height: 125%;
+margin-bottom: 0;
+margin-top: 0;
 }
 
 .hero-section .left p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 200%;
-  margin-bottom: 30px;
-  width: 457px;
+font-weight: normal;
+font-size: 16px;
+line-height: 200%;
+margin-bottom: 30px;
+width: 457px;
 }
 
 .hero-section .left {
-  flex: 1;
-  margin-left: 50px;
+flex: 1;
+margin-left: 50px;
 }
 
 .hero-section .right {
-  align-self: flex-end;
+align-self: flex-end;
 }
 
 .hero-section .right img {
-  height: 520px;
-  vertical-align: middle;
+height: 520px;
+vertical-align: middle;
 }
 
 /* Team Names */
 .team {
-  margin-top: 2vh;
+margin-top: 2vh;
 }
 
 .ateam {
-  justify-content: center;
-  margin-bottom: 8vh;
+justify-content: center;
+margin-bottom: 8vh;
 }
 
 .ateam h2 {
-  font-size: 8vh;
+font-size: 8vh;
 }
 
 
 /* Achievement Cards */
 
 .achievement-card {
-  position: absolute;
-  min-width: 200px;
-  color: var(--dark-blue-color);
+position: absolute;
+min-width: 200px;
+color: var(--dark-blue-color);
 }
 
 .achievement-card .content {
-  border-radius: 24px;
-  background: #fff;
-  padding: 8px 32px;
-  z-index: 10;
-  position: relative;
+border-radius: 24px;
+background: #fff;
+padding: 8px 32px;
+z-index: 10;
+position: relative;
 }
 
 .achievement-card.students-enrolled {
-  left: 49%;
-  top: 270px;
+left: 49%;
+top: 270px;
 }
 
 .achievement-card.overall-rating {
-  left: 47%;
-  top: 470px;
+left: 47%;
+top: 470px;
 }
 
 .achievement-card .content div {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+display: flex;
+align-items: center;
+gap: 12px;
 }
 
 .achievement-card h3 {
-  font-weight: bold;
-  font-size: 36px;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-  flex: 1;
+font-weight: bold;
+font-size: 36px;
+margin: 0;
+text-align: center;
+width: 100%;
+flex: 1;
 }
 
 .achievement-card img {
-  flex: 1;
-  height: 42px;
-  margin-left: -24px;
+flex: 1;
+height: 42px;
+margin-left: -24px;
 }
 
 .achievement-card p {
-  font-weight: normal;
-  font-size: 16px;
-  margin-top: -8px;
-  margin-bottom: 8px;
-  text-align: center;
+font-weight: normal;
+font-size: 16px;
+margin-top: -8px;
+margin-bottom: 8px;
+text-align: center;
 }
 
 .achievement-card .bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
-  border-radius: 24px;
-  top: 8px;
-  left: 8px;
-  z-index: 1;
+position: absolute;
+height: 100%;
+width: 100%;
+background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+border-radius: 24px;
+top: 8px;
+left: 8px;
+z-index: 1;
 }
 
 /* Testimonials Section */
 
 section {
-  margin-top: 100px;
+margin-top: 100px;
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 120%;
-  margin: 0;
-  color: var(--dark-blue-color);
+font-family: "Raleway", sans-serif;
+font-weight: 900;
+font-size: 60px;
+line-height: 120%;
+margin: 0;
+color: var(--dark-blue-color);
 }
 
 h2.light {
-  color: #fff;
+color: #fff;
 }
 
 section p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 200%;
-  color: var(--dark-blue-color);
-  margin: 12px 0;
+font-weight: normal;
+font-size: 16px;
+line-height: 200%;
+color: var(--dark-blue-color);
+margin: 12px 0;
 }
 
 .testimonials-section {
-  display: flex;
-  gap: 100px;
-  align-items: center;
+display: flex;
+gap: 100px;
+align-items: center;
 }
 
 .testimonials-section .mobile-btn {
-  display: none;
+display: none;
 }
 
 .testimonials-section .testimonial-card {
-  width: 442px;
-  background: #ffffff;
-  box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
-  border-radius: 24px;
-  margin-bottom: 50px;
-  position: relative;
+width: 442px;
+background: #ffffff;
+box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+border-radius: 24px;
+margin-bottom: 50px;
+position: relative;
 }
 
 .testimonials-section .testimonial-card::before {
-  content: "";
-  width: 28px;
-  position: absolute;
-  height: 40px;
-  top: -40px;
-  left: 60px;
-  background: var(--dark-blue-color);
-  border-radius: 24px 24px 0 0;
+content: "";
+width: 28px;
+position: absolute;
+height: 40px;
+top: -40px;
+left: 60px;
+background: var(--dark-blue-color);
+border-radius: 24px 24px 0 0;
 }
 
 .testimonials-section .testimonial-card:last-child::before {
-  left: 40px;
-  top: -50px;
-  border-radius: 0 0 24px 24px;
-  height: calc(100% + 90px);
-  z-index: -1;
+left: 40px;
+top: -50px;
+border-radius: 0 0 24px 24px;
+height: calc(100% + 90px);
+z-index: -1;
 }
 
 .testimonials-section .testimonial-card .content {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 150%;
-  color: #ffffff;
-  border-radius: 24px;
-  padding: 24px 32px;
-  background: var(--light-blue-color);
+font-family: "Raleway", sans-serif;
+font-weight: 900;
+font-size: 18px;
+line-height: 150%;
+color: #ffffff;
+border-radius: 24px;
+padding: 24px 32px;
+background: var(--light-blue-color);
 }
 
 .testimonials-section .testimonial-card:last-child .content {
-  background: var(--blue-color);
+background: var(--blue-color);
 }
 
 .testimonials-section .testimonial-card .info h4 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 120%;
-  margin: 0;
-  color: var(--dark-blue-color);
+font-family: "Raleway", sans-serif;
+font-weight: 900;
+font-size: 24px;
+line-height: 120%;
+margin: 0;
+color: var(--dark-blue-color);
 }
 
 .testimonials-section .testimonial-card .info {
-  padding: 24px 32px;
-  background: #fff;
-  border-radius: 24px;
+padding: 24px 32px;
+background: #fff;
+border-radius: 24px;
 }
 
 .testimonials-section .testimonial-card .info p.company {
-  font-family: "Raleway", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 120%;
-  color: var(--dark-blue-color);
+font-family: "Raleway", sans-serif;
+font-weight: normal;
+font-size: 18px;
+line-height: 120%;
+color: var(--dark-blue-color);
 }
 
 .testimonials-section .testimonial-card img {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  right: 32px;
-  bottom: 20px;
+width: 120px;
+height: 120px;
+position: absolute;
+right: 32px;
+bottom: 20px;
 }
 
 .testimonials-section .testimonial-card:last-child {
-  transform: translateX(20px);
+transform: translateX(20px);
 }
 
 .testimonials-section .features {
-  margin-bottom: 30px;
+margin-bottom: 30px;
 }
 
 /* Courses Section */
 
 .courses-section {
-  background: linear-gradient(180deg, #376094 0%, #304e5f 100%);
-  padding: 70px 0;
-  padding-bottom: 120px;
+background: linear-gradient(180deg, #376094 0%, #304e5f 100%);
+padding: 70px 0;
+padding-bottom: 120px;
 }
 
 .courses-section h2 {
-  text-align: center;
+text-align: center;
 }
 
 .courses-section .course-cards {
-  display: flex;
-  gap: 70px;
+display: flex;
+gap: 70px;
 }
 
 .courses-section .course-cards img {
-  width: 100%;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
-  border-radius: 24px;
+width: 100%;
+filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+border-radius: 24px;
 }
 
 .courses-section .course-card {
-  background: #ffffff;
-  border-radius: 24px;
-  padding: 0px 32px;
-  margin: 40px 0;
-  position: relative;
+background: #ffffff;
+border-radius: 24px;
+padding: 0px 32px;
+margin: 40px 0;
+position: relative;
 }
 
 .courses-section .course-card::after {
-  content: "";
-  height: 8px;
-  position: absolute;
-  left: 32px;
-  right: 32px;
-  bottom: 0;
-  background: var(--dark-blue-color);
-  border-radius: 24px;
+content: "";
+height: 8px;
+position: absolute;
+left: 32px;
+right: 32px;
+bottom: 0;
+background: var(--dark-blue-color);
+border-radius: 24px;
 }
 
 .courses-section .course-card h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 150%;
+font-family: "Raleway", sans-serif;
+font-weight: 900;
+font-size: 30px;
+line-height: 150%;
 
-  color: var(--dark-blue-color);
+color: var(--dark-blue-color);
 }
 
 .courses-section .course-card .info {
-  display: flex;
-  gap: 16px;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+gap: 16px;
+justify-content: space-between;
+align-items: center;
 }
 
 .courses-section .course-card .duration {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 150%;
-  white-space: nowrap;
-  color: var(--dark-blue-color);
-  position: relative;
-  padding-left: 20px;
+font-family: "Raleway", sans-serif;
+font-weight: 900;
+font-size: 16px;
+line-height: 150%;
+white-space: nowrap;
+color: var(--dark-blue-color);
+position: relative;
+padding-left: 20px;
 }
 
 .courses-section .course-card .duration::before {
-  position: absolute;
-  top: 2px;
-  left: -6px;
+position: absolute;
+top: 2px;
+left: -6px;
 }
 
 .courses-section .wrapper {
-  position: relative;
+position: relative;
 }
 
 .courses-section .wrapper .btn {
-  position: absolute;
-  right: 0;
+position: absolute;
+right: 0;
 }
 
 h4 {
-  margin-left: 2vh;
-  margin-right: 2vh;
-  line-height: 4vh;
-  text-align: center;
-  color: white;
-  margin-top: 2.5vh;
-  font-size: 2vh;
-  font-weight: normal;
+margin-left: 2vh;
+margin-right: 2vh;
+line-height: 4vh;
+text-align: center;
+color: white;
+margin-top: 2.5vh;
+font-size: 2vh;
+font-weight: normal;
 }
 
 #whatWeDoSection {
-    background: linear-gradient(180deg, #47756f 0%, #13092e 100%);
+  background: linear-gradient(180deg, #47756f 0%, #13092e 100%);
 }
 
 /* App Section */
 
 .app-section {
-  text-align: center;
+text-align: center;
 }
 
 .app-section .app-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+margin-top: 24px;
 }
 
 .app-section .app-btn {
-  padding: 16px 30px;
-  background: #000000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  min-width: 310px;
+padding: 16px 30px;
+background: #000000;
+color: #fff;
+display: flex;
+align-items: center;
+gap: 14px;
+min-width: 310px;
 }
 
 .app-section .app-btn span {
-  font-weight: normal;
-  font-size: 20px;
-  color: #ffffff;
+font-weight: normal;
+font-size: 20px;
+color: #ffffff;
 }
 
 /* Footer */
 
 footer {
-  background: var(--dark-color);
-  color: #fff;
-  padding: 70px 0;
+background: var(--dark-color);
+color: #fff;
+padding: 70px 0;
 }
 
 #pushUp {
-  max-width: 1134px;
-  margin: 0 auto;
-  margin-bottom: 5lh;
+max-width: 1134px;
+margin: 0 auto;
+margin-bottom: 5lh;
 }
 
 footer a {
-  text-decoration: none;
-  color: #fff;
+text-decoration: none;
+color: #fff;
 }
 
 footer h3 {
-  color: white;
+color: white;
 }
 
 footer ul {
-  list-style: none;
-  padding-left: 20px;
+list-style: none;
+padding-left: 20px;
 }
 
 footer ul li {
-  margin: 16px 0;
+margin: 16px 0;
 }
 
 footer .links-container {
-  display: grid;
-  grid-template-columns: 2fr 2fr 3fr;
+display: grid;
+grid-template-columns: 2fr 2fr 3fr;
 }
 
 footer .social {
-  margin-left: 20px;
+margin-left: 20px;
 }
 
 footer .social a {
-  margin-right: 28px;
+margin-right: 28px;
 }
 
 footer form {
-  margin-left: 20px;
-  margin-top: 16px;
-  position: relative;
+margin-left: 20px;
+margin-top: 16px;
+position: relative;
 }
 
 footer form input {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 200%;
-  border-radius: 8px;
-  padding: 8px 160px 8px 32px;
-  border: none;
-  width: 100%;
-  color: #000000;
+font-family: "Poppins", sans-serif;
+font-weight: normal;
+font-size: 16px;
+line-height: 200%;
+border-radius: 8px;
+padding: 8px 160px 8px 32px;
+border: none;
+width: 100%;
+color: #000000;
 }
 
 footer form .submit-btn {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--dark-blue-color);
-  border-radius: 8px;
-  padding: 8px 32px;
-  border: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  color: #ffffff;
-  cursor: pointer;
+position: absolute;
+right: 5px;
+top: 50%;
+transform: translateY(-50%);
+background: var(--dark-blue-color);
+border-radius: 8px;
+padding: 8px 32px;
+border: 0;
+font-family: "Poppins", sans-serif;
+font-weight: normal;
+font-size: 16px;
+color: #ffffff;
+cursor: pointer;
 }
 
 footer .copyright {
-  margin-top: 36px;
+margin-top: 36px;
 }
 
 nav.mobile-nav,
 .mobile-menu-container {
-  display: none;
+display: none;
 }
 
 @media (min-width: 801px) {
-  #homeHeader {
-    background-image: url("/public/Images/homeBack.png");
-  }
-  nav .logo {
-    margin-left: 50px;
-  }
+#homeHeader {
+  background-image: url("/public/Images/homeBack.png");
+}
+nav .logo {
+  margin-left: 50px;
+}
 }
 
 @media (max-width: 1100px) {
-  .btn {
-    padding: 12px 32px;
-  }
+.btn {
+  padding: 12px 32px;
+}
 
-  .wrapper {
-    padding: 0 100px;
-  }
+.wrapper {
+  padding: 0 100px;
+}
 
-  nav {
-    width: 100%;
-    left: 0;
-    right: 0;
-    padding: 36px 100px;
-  }
+nav {
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 36px 100px;
+}
 
-  nav.scrolled {
-    padding: 16px 100px;
-  }
+nav.scrolled {
+  padding: 16px 100px;
+}
 
-  header,
-  .hero-section,
-  header .wrapper {
-    max-height: 1100px;
-  }
+header,
+.hero-section,
+header .wrapper {
+  max-height: 1100px;
+}
 
-  .hero-section {
-    flex-direction: column;
-  }
+.hero-section {
+  flex-direction: column;
+}
 
-  .hero-section .left {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.hero-section .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .hero-section .left .btn {
-    align-self: flex-start;
-  }
+.hero-section .left .btn {
+  align-self: flex-start;
+}
 
-  .hero-section .left h1 {
-    font-size: 50px;
-    line-height: 125%;
-  }
+.hero-section .left h1 {
+  font-size: 50px;
+  line-height: 125%;
+}
 
-  .hero-section .right {
-    position: absolute;
-    bottom: 0;
-  }
+.hero-section .right {
+  position: absolute;
+  bottom: 0;
+}
 
-  .hero-section .right img {
-    height: 580px;
-  }
+.hero-section .right img {
+  height: 580px;
+}
 
-  .hero-section .achievement-card {
-    position: relative;
-    margin-bottom: 80px;
-  }
+.hero-section .achievement-card {
+  position: relative;
+  margin-bottom: 80px;
+}
 
-  .achievement-card.students-enrolled,
-  .achievement-card.overall-rating {
-    left: unset;
-    top: unset;
-  }
+.achievement-card.students-enrolled,
+.achievement-card.overall-rating {
+  left: unset;
+  top: unset;
+}
 
-  .hero-section .achievement-cards {
-    align-self: flex-start;
-    margin: 40px;
-  }
+.hero-section .achievement-cards {
+  align-self: flex-start;
+  margin: 40px;
+}
 
-  h2 {
-    font-size: 40px;
-  }
+h2 {
+  font-size: 40px;
+}
 
-  .testimonials-section {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 50px;
-  }
+.testimonials-section {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 50px;
+}
 
-  .testimonials-section .testimonial-card {
-    width: 100%;
-    margin-bottom: 40px;
-  }
+.testimonials-section .testimonial-card {
+  width: 100%;
+  margin-bottom: 40px;
+}
 
-  .testimonials-section .testimonial-card:last-child::before {
-    top: -40px;
-    left: 60px;
-    height: calc(100% + 80px);
-  }
+.testimonials-section .testimonial-card:last-child::before {
+  top: -40px;
+  left: 60px;
+  height: calc(100% + 80px);
+}
 
-  .testimonials-section .testimonial-card:last-child {
-    transform: translateX(0px);
-    margin-bottom: 0;
-  }
+.testimonials-section .testimonial-card:last-child {
+  transform: translateX(0px);
+  margin-bottom: 0;
+}
 
-  .testimonials-section .desktop-btn {
-    display: none;
-  }
+.testimonials-section .desktop-btn {
+  display: none;
+}
 
-  .testimonials-section .mobile-btn {
-    display: block;
-    align-self: flex-end;
-    order: 3;
-  }
+.testimonials-section .mobile-btn {
+  display: block;
+  align-self: flex-end;
+  order: 3;
+}
 
-  .testimonials-section .right {
-    order: 1;
-  }
+.testimonials-section .right {
+  order: 1;
+}
 
-  .testimonials-section .left {
-    order: 2;
-  }
+.testimonials-section .left {
+  order: 2;
+}
 
-  .testimonials-section .right p {
-    display: inline;
-  }
+.testimonials-section .right p {
+  display: inline;
+}
 
-  .testimonials-section h2 {
-    margin-bottom: 20px;
-  }
+.testimonials-section h2 {
+  margin-bottom: 20px;
+}
 
-  .courses-section .course-cards {
-    flex-direction: column;
-    gap: 80px;
-  }
+.courses-section .course-cards {
+  flex-direction: column;
+  gap: 80px;
+}
 
-  .courses-section .course-card {
-    margin: 0;
-  }
+.courses-section .course-card {
+  margin: 0;
+}
 
-  .courses-section h2 {
-    margin-bottom: 40px;
-  }
+.courses-section h2 {
+  margin-bottom: 40px;
+}
 
-  .courses-section .course-card img {
-    height: 260px;
-    object-fit: cover;
-  }
+.courses-section .course-card img {
+  height: 260px;
+  object-fit: cover;
+}
 
-  .courses-section .course-card h3 {
-    font-size: 24px;
-  }
+.courses-section .course-card h3 {
+  font-size: 24px;
+}
 
-  .courses-section .wrapper .btn {
-    right: 100px;
-  }
+.courses-section .wrapper .btn {
+  right: 100px;
+}
 
-  .courses-section .course-card:last-child {
-    margin-bottom: 50px;
-  }
+.courses-section .course-card:last-child {
+  margin-bottom: 50px;
+}
 
-  footer .links-container {
-    grid-template-columns: 1fr 1fr;
-  }
+footer .links-container {
+  grid-template-columns: 1fr 1fr;
+}
 
-  footer .links-container .links:last-child {
-    grid-column: 1 / 3;
-  }
+footer .links-container .links:last-child {
+  grid-column: 1 / 3;
+}
 }
 
 /* Existing CSS should remain unchanged */
@@ -821,260 +875,260 @@ nav.mobile-nav,
 /* Add to the existing styles.css for mobile view */
 
 @media (max-width: 800px) {
-  /* Navigation */
-  nav {
-    display: none;
-  }
+/* Navigation */
+nav {
+  display: none;
+}
 
-  nav.mobile-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16;
-    background-color: var(--dark-color);
-    color: white;
-  }
+nav.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16;
+  background-color: var(--dark-color);
+  color: white;
+}
 
-  nav.mobile-nav.scrolled {
-    padding: 8px 100px;
-    background: var(--dark-color);
-    box-shadow: 0 9px 21px -5px rgba(0, 0, 0, 0.3);
-  }
+nav.mobile-nav.scrolled {
+  padding: 8px 100px;
+  background: var(--dark-color);
+  box-shadow: 0 9px 21px -5px rgba(0, 0, 0, 0.3);
+}
 
-  .menu-icon {
-    cursor: pointer;
-  }
+.menu-icon {
+  cursor: pointer;
+}
 
-  #homeHeader {
-    background-image: url("/public/Images/mobile-home.png");
-  }
+#homeHeader {
+  background-image: url("/public/Images/mobile-home.png");
+}
 
-  .hero-section .left {
-    margin-top: 3lh;
-    margin-left: 2lh;
-    margin-right: 2lh;
-    justify-content: normal;
-  }
+.hero-section .left {
+  margin-top: 3lh;
+  margin-left: 2lh;
+  margin-right: 2lh;
+  justify-content: normal;
+}
 
-  .mobile-menu-container {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 100%;
-    background: var(--dark-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 200;
-    transition: all 400ms ease;
-  }
+.mobile-menu-container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  background: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  transition: all 400ms ease;
+}
 
-  .mobile-menu-container.active {
-    left: 0;
-  }
+.mobile-menu-container.active {
+  left: 0;
+}
 
-  .mobile-menu-container .close-icon {
-    position: fixed;
-    top: 32px;
-    right: 100px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 400ms ease;
-  }
+.mobile-menu-container .close-icon {
+  position: fixed;
+  top: 32px;
+  right: 100px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 400ms ease;
+}
 
-  .mobile-menu-container.active .close-icon {
-    opacity: 1;
-    pointer-events: auto;
-  }
+.mobile-menu-container.active .close-icon {
+  opacity: 1;
+  pointer-events: auto;
+}
 
-  .mobile-menu-container ul {
-    list-style: none;
-    padding: 0;
-  }
+.mobile-menu-container ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .mobile-menu-container ul li {
-    margin: 30px 0;
-    text-align: center;
-  }
+.mobile-menu-container ul li {
+  margin: 30px 0;
+  text-align: center;
+}
 
-  .mobile-menu-container ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
+.mobile-menu-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
 
-  /* Hero Section */
-  .hero-section {
-    height: 30vh;
-  }
+/* Hero Section */
+.hero-section {
+  height: 30vh;
+}
 
-  #abt_txt {
-    font-size: 8vh;
-    line-height: 1.2;
-    text-align: center;
-    padding-top: 5vh; 
-  }
+#abt_txt {
+  font-size: 8vh;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 5vh; 
+}
 
-  /* Testimonials Section */
-  .testimonials-section {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 4vh;
-  }
+/* Testimonials Section */
+.testimonials-section {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4vh;
+}
 
-  .testimonials-section .left,
-  .testimonials-section .right {
-    width: 100%;
-    text-align: center;
-  }
+.testimonials-section .left,
+.testimonials-section .right {
+  width: 100%;
+  text-align: center;
+}
 
-  .testimonials-section .left img {
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto;
-  }
+.testimonials-section .left img {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
 
-  .testimonials-section .right h2 {
-    font-size: 6vh;
-    margin-bottom: 2vh;
-  }
+.testimonials-section .right h2 {
+  font-size: 6vh;
+  margin-bottom: 2vh;
+}
 
-  /* Courses Section */
-  .courses-section h2,
-  
-  .team h2 {
-    font-size: 6vh;
-    margin-bottom: 2vh;
-  }
+/* Courses Section */
+.courses-section h2,
 
-  .courses-section p {
-    font-size: 3vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
+.team h2 {
+  font-size: 6vh;
+  margin-bottom: 2vh;
+}
 
-  #who-we-are {
-    margin-bottom: 0vh; /* Adjust the value to reduce the space */
-  }
+.courses-section p {
+  font-size: 3vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
 
-  section.testimonials-section {
-    margin: 1lh 0lh 0lh;
-  }
+#who-we-are {
+  margin-bottom: 0vh; /* Adjust the value to reduce the space */
+}
 
-  .who-we-are-image {
-    margin-top: 0vh; /* Adjust the value to reduce the space */
-  }
+section.testimonials-section {
+  margin: 1lh 0lh 0lh;
+}
+
+.who-we-are-image {
+  margin-top: 0vh; /* Adjust the value to reduce the space */
+}
 }
 
 
 
 @media (max-width: 700px) {
-  .wrapper {
-    padding: 0 32px;
-  }
+.wrapper {
+  padding: 0 32px;
+}
 
-  .hero-section .left p {
-    width: 100%;
-  }
+.hero-section .left p {
+  width: 100%;
+}
 
-  .app-section .app-buttons {
-    flex-direction: column;
-  }
+.app-section .app-buttons {
+  flex-direction: column;
+}
 
-  nav.mobile-nav {
-    padding: 32px;
-  }
+nav.mobile-nav {
+  padding: 32px;
+}
 
-  nav.mobile-nav.scrolled {
-    padding: 8px 32px;
-  }
+nav.mobile-nav.scrolled {
+  padding: 8px 32px;
+}
 
-  .mobile-menu-container .close-icon {
-    right: 32px;
-  }
+.mobile-menu-container .close-icon {
+  right: 32px;
+}
 
-  .hero-section .left h1 {
-    font-size: 36px;
-  }
+.hero-section .left h1 {
+  font-size: 36px;
+}
 
-  .hero-section .right img {
-    height: 400px;
-    transform: translateX(50px);
-  }
+.hero-section .right img {
+  height: 400px;
+  transform: translateX(50px);
+}
 
-  .hero-section .right {
-    overflow: hidden;
-    transform: translateX(30px);
-  }
+.hero-section .right {
+  overflow: hidden;
+  transform: translateX(30px);
+}
 
-  .achievement-card h3 {
-    font-size: 30px;
-  }
+.achievement-card h3 {
+  font-size: 30px;
+}
 
-  .hero-section .achievement-card {
-    margin-bottom: 48px;
-  }
+.hero-section .achievement-card {
+  margin-bottom: 48px;
+}
 
-  .hero-section .achievement-cards {
-    margin: 0;
-  }
+.hero-section .achievement-cards {
+  margin: 0;
+}
 
-  h2 {
-    font-size: 30px;
-  }
+h2 {
+  font-size: 30px;
+}
 
-  .testimonials-section .testimonial-card .info h4 {
-    font-size: 18px;
-  }
+.testimonials-section .testimonial-card .info h4 {
+  font-size: 18px;
+}
 
-  .testimonials-section .testimonial-card .info p.company {
-    font-size: 14px;
-  }
+.testimonials-section .testimonial-card .info p.company {
+  font-size: 14px;
+}
 
-  .testimonials-section .testimonial-card img {
-    height: 100px;
-    width: 100px;
-  }
+.testimonials-section .testimonial-card img {
+  height: 100px;
+  width: 100px;
+}
 
-  .courses-section .wrapper {
-    padding: 0;
-  }
+.courses-section .wrapper {
+  padding: 0;
+}
 
-  .courses-section .course-card img {
-    height: 240px;
-  }
+.courses-section .course-card img {
+  height: 240px;
+}
 
-  .courses-section .wrapper .btn {
-    right: 32px;
-  }
-  
-  footer .links-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 40px;
-  }
+.courses-section .wrapper .btn {
+  right: 32px;
+}
 
-  footer form input {
-    padding: 8px 32px;
-  }
+footer .links-container {
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 40px;
+}
 
-  footer .links-container .links:last-child {
-    grid-column: 1 / 2;
-  }
+footer form input {
+  padding: 8px 32px;
+}
 
-  footer ul {
-    padding: 0;
-  }
+footer .links-container .links:last-child {
+  grid-column: 1 / 2;
+}
 
-  footer form .submit-btn {
-    top: 130%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+footer ul {
+  padding: 0;
+}
 
-  footer .copyright {
-    margin-top: 80px;
-    text-align: center;
-  }
+footer form .submit-btn {
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer .copyright {
+  margin-top: 80px;
+  text-align: center;
+}
 }

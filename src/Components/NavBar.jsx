@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { Link,NavLink } from "react-router-dom";
 
 export default function NavBar() {
@@ -33,7 +34,11 @@ export default function NavBar() {
                 <a href="home">Home</a>
             </li>
             <li className="navLet">
-              <a href="about">About</a>
+              <a href="about">About <i class="fa-solid fa-chevron-down"></i></a>
+              <ul className='navDrop navLet twoEl'>
+                  <li><a href="about">Events</a></li>
+                  <li><a href="about">Media</a></li>
+              </ul>
             </li>
             <li className="navLet">
               <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a>
@@ -67,6 +72,7 @@ export default function NavBar() {
           <ul>
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
+            <li><a href="#">Events</a></li>
             <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a></li>
             <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
             <li><a href="#">Donate</a></li>
