@@ -37,7 +37,7 @@ export default function NavBar() {
               <a href="about">About <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
                   <li><a href="#">Events</a></li>
-                  <li><a href="#">Media</a></li>
+                  <li><a href="https://www.instagram.com/projectucode/">Media</a></li>
               </ul>
             </li>
             <li className="navLet">
