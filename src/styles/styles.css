@@ -72,6 +72,11 @@ height: 50vh;
 background-image: url("/public/Images/homeBackAbout.png");
 }
 
+#volunteerHeader {
+  height: 50vh;
+  background-image: url("/public/Images/volunteerBack.png");
+  }
+
 #homeHeader {
 background-size: cover; /* Adjust to your preference */
 background-repeat: no-repeat;
@@ -386,7 +391,11 @@ z-index: 1;
 /* Testimonials Section */
 
 section {
-margin-top: 100px;
+  margin-top: 100px;
+}
+
+#volunteer-testimonials-section {
+  margin-bottom: 100px;
 }
 
 h2 {

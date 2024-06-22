@@ -53,7 +53,7 @@ export default function NavBar() {
             <li className="navLet">
               <a href="mailto:support@projectucode.org">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet contNav'>
-                  <li><a href="https://forms.gle/2KzhePquuNrhmY6m8">Volunteer</a></li>
+                  <li><a href="volunteer">Volunteer</a></li>
                   <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
                   <li><a href="https://discord.gg/SE8m5xsuay">Discord</a></li>
               </ul>
@@ -80,7 +80,7 @@ export default function NavBar() {
             <li><a href="about">About</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a></li>
-            <li><a href="https://forms.gle/2KzhePquuNrhmY6m8">Volunteer</a></li>
+            <li><a href="volunteer">Volunteer</a></li>
             <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="mailto:support@projectucode.org">Contact Us</a></li>

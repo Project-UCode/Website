@@ -6,6 +6,7 @@ import AboutPage from './AboutPage';
 
 
 import './styles/styles.css';
+import VolunteerPage from './VolunteerPage';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="home" element={<HomePage />} />
+        <Route path="volunteer" element={<VolunteerPage />} />
       </Routes>
     </div>
   );
