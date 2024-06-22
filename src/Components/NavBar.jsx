@@ -44,7 +44,7 @@ export default function NavBar() {
               <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
                   <li><a href="#">Courses</a></li>
-                  <li><a href="#">UCode Live</a></li>
+                  <li><a href="#">Workshops</a></li>
               </ul>
             </li>
             <li className="navLet">
@@ -54,7 +54,7 @@ export default function NavBar() {
               <a href="mailto:support@projectucode.org">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet contNav'>
                   <li><a href="volunteer">Volunteer</a></li>
-                  <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
+                  <li><a href="chapters">Chapters</a></li>
                   <li><a href="https://discord.gg/SE8m5xsuay">Discord</a></li>
               </ul>
             </li>
@@ -81,7 +81,7 @@ export default function NavBar() {
             <li><a href="#">Events</a></li>
             <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a></li>
             <li><a href="volunteer">Volunteer</a></li>
-            <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
+            <li><a href="chapters">Chapters</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="mailto:support@projectucode.org">Contact Us</a></li>
             <li><a href="#" className="btn dark">Join</a></li>

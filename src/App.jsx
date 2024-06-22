@@ -3,10 +3,11 @@ import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
+import VolunteerPage from './VolunteerPage';
+import ChaptersPage from './ChaptersPage';
 
 
 import './styles/styles.css';
-import VolunteerPage from './VolunteerPage';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="about" element={<AboutPage />} />
         <Route path="home" element={<HomePage />} />
         <Route path="volunteer" element={<VolunteerPage />} />
+        <Route path="chapters" element={<ChaptersPage />} />
       </Routes>
     </div>
   );

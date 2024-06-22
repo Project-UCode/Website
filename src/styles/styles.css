@@ -75,7 +75,12 @@ background-image: url("/public/Images/homeBackAbout.png");
 #volunteerHeader {
   height: 50vh;
   background-image: url("/public/Images/volunteerBack.png");
-  }
+}
+
+#chapterHeader {
+  height: 50vh;
+  background-image: url("/public/Images/chapterBack.png");
+}
 
 #homeHeader {
 background-size: cover; /* Adjust to your preference */
@@ -395,6 +400,10 @@ section {
 }
 
 #volunteer-testimonials-section {
+  margin-bottom: 100px;
+}
+
+#chapter-testimonials-section {
   margin-bottom: 100px;
 }
 
