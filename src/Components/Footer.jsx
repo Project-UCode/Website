@@ -41,6 +41,10 @@ export default function Footer() {
                         <li>
                             <a href="https://www.instagram.com/projectucode/">Instagram</a>
                         </li>
+
+                        <li>
+                            <a href="https://discord.gg/SE8m5xsuay">Discord</a>
+                        </li>
                         </ul>
                     </div>
 

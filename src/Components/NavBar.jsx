@@ -36,21 +36,27 @@ export default function NavBar() {
             <li className="navLet">
               <a href="about">About <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
-                  <li><a href="about">Events</a></li>
-                  <li><a href="about">Media</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Media</a></li>
               </ul>
             </li>
             <li className="navLet">
-              <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a>
-            </li>
-            <li className="navLet">
-              <a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a>
+              <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn <i class="fa-solid fa-chevron-down"></i></a>
+              <ul className='navDrop navLet twoEl'>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">UCode Live</a></li>
+              </ul>
             </li>
             <li className="navLet">
               <a href="#">Donate</a>
             </li>
             <li className="navLet">
-              <a href="mailto:support@projectucode.org">Contact Us</a>
+              <a href="mailto:support@projectucode.org">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
+              <ul className='navDrop navLet contNav'>
+                  <li><a href="https://forms.gle/2KzhePquuNrhmY6m8">Volunteer</a></li>
+                  <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
+                  <li><a href="https://discord.gg/SE8m5xsuay">Discord</a></li>
+              </ul>
             </li>
             <li>
               <a href="#" className="btn dark">Join</a>
@@ -74,6 +80,7 @@ export default function NavBar() {
             <li><a href="about">About</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a></li>
+            <li><a href="https://forms.gle/2KzhePquuNrhmY6m8">Volunteer</a></li>
             <li><a href="https://uwoyp04h86d.typeform.com/to/yIJ1nCTQ">Chapters</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="mailto:support@projectucode.org">Contact Us</a></li>
