@@ -1,10 +1,12 @@
 import { Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router,Switch } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import VolunteerPage from './VolunteerPage';
 import ChaptersPage from './ChaptersPage';
+import EventsPage from './EventsPage';
 
 
 import './styles/styles.css';
@@ -19,6 +21,7 @@ function App() {
         <Route path="home" element={<HomePage />} />
         <Route path="volunteer" element={<VolunteerPage />} />
         <Route path="chapters" element={<ChaptersPage />} />
+        <Route path="events" element={<EventsPage />} />
       </Routes>
     </div>
   );

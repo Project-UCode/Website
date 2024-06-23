@@ -82,6 +82,11 @@ background-image: url("/public/Images/homeBackAbout.png");
   background-image: url("/public/Images/chapterBack.png");
 }
 
+#eventsHeader {
+  height: 50vh;
+  background-image: url("/public/Images/eventsBack.png");
+}
+
 #homeHeader {
 background-size: cover; /* Adjust to your preference */
 background-repeat: no-repeat;
@@ -998,6 +1003,10 @@ nav.mobile-nav.scrolled {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+}
+
+.phscsa {
+  width: 271.9px;
 }
 
 /* Hero Section */

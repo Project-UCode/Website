@@ -36,7 +36,7 @@ export default function NavBar() {
             <li className="navLet">
               <a href="about">About <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
-                  <li><a href="#">Events</a></li>
+                  <li><a href="events">Events</a></li>
                   <li><a href="https://www.instagram.com/projectucode/">Media</a></li>
               </ul>
             </li>
@@ -78,7 +78,7 @@ export default function NavBar() {
           <ul>
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
-            <li><a href="#">Events</a></li>
+            <li><a href="events">Events</a></li>
             <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a></li>
             <li><a href="volunteer">Volunteer</a></li>
             <li><a href="chapters">Chapters</a></li>
