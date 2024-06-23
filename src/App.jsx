@@ -7,6 +7,7 @@ import AboutPage from './AboutPage';
 import VolunteerPage from './VolunteerPage';
 import ChaptersPage from './ChaptersPage';
 import EventsPage from './EventsPage';
+import LivePage from './LivePage';
 
 
 import './styles/styles.css';
@@ -22,6 +23,7 @@ function App() {
         <Route path="volunteer" element={<VolunteerPage />} />
         <Route path="chapters" element={<ChaptersPage />} />
         <Route path="events" element={<EventsPage />} />
+        <Route path="live" element={<LivePage />} />
       </Routes>
     </div>
   );
