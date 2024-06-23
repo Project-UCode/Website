@@ -531,6 +531,10 @@ transform: translateX(20px);
 margin-bottom: 30px;
 }
 
+.about-mission {
+  margin-bottom: 6lh;
+}
+
 /* Live About Section */
 
 .live-about-section {
@@ -1092,6 +1096,10 @@ nav.mobile-nav.scrolled {
   line-height: 1.2;
   text-align: center;
   padding-top: 5vh; 
+}
+
+.team-txt {
+  padding: 0 1lh 0 1lh;
 }
 
 /* Testimonials Section */

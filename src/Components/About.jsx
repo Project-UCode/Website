@@ -15,7 +15,7 @@ export default function About() {
 
         {/* <!-- End of the header section --> */}
 
-        <div className="wrapper">
+        <div className="wrapper about-mission">
             <section className="testimonials-section">
             <div className="left">
                 <img src="Images/ucodemission.png" alt="mission-photo" />
@@ -65,7 +65,7 @@ export default function About() {
             <div className="right">
                 <h2>Akhil Kotturi</h2>
                 <h3></h3>
-                <div className="features">
+                <div className="features team-txt">
                 <p>
                     Hello! I am one of the Co-Founders of Project Code. I've always dreamt of changing the world, and I'm very happy to do it through Project UCode.
                 </p>
@@ -81,7 +81,7 @@ export default function About() {
             <div className="right">
                 <h2>Puranjay Prashanth</h2>
                 <h3></h3>
-                <div className="features">
+                <div className="features team-txt">
                 <p>
                     Hello! I am one of the Co-Founders of Project Code. I've always had a passion for programming and managing my own organization. This passion inspired me to help start Project UCode.
                 </p>
