@@ -34,7 +34,7 @@ export default function Home() {
         </header>
         {/* <!-- End of the header section --> */}
 
-        <div className="wrapper">
+        <div className="wrapper about-mission">
         <section className="testimonials-section">
             <div className="left homeLeft">
                 <img className="who-are-we-image" id="learn-home" src="Images/ucodelearn.png" alt="" />
@@ -45,11 +45,11 @@ export default function Home() {
 
             <div className="features">
                 <p className="who-are-we">
-                Project UCode is a non-profit organization established to encourage and foster the education of computer science, engineering, and specifically programming.
+                    Project UCode is a non-profit organization established to encourage and foster the education of computer science, engineering, and specifically programming.
                 </p>
 
                 <p className="who-are-we">
-                We aim to educate individuals in the ever growing skill of programming.
+                    We aim to educate individuals in the ever growing skill of programming.
                 </p>
             </div>
 
