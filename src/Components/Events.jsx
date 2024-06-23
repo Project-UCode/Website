@@ -34,7 +34,7 @@ export default function Events() {
                 <div className="features">
                         <h2>PHS CSA Review</h2>
                         <p>
-                            Volunteers assisted students staying after school for Computer Science A tutoring at Prosper High School. 
+                            Volunteers assisted students staying after school for AP Computer Science A tutoring at Prosper High School. 
                         </p>
                 </div>
             </div>

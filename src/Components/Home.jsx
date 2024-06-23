@@ -45,7 +45,7 @@ export default function Home() {
 
             <div className="features">
                 <p className="who-are-we">
-                Project UCode is a non-profit organization established to help encourage and foster the education of computer scinece, enginerring, and specifically programming.
+                Project UCode is a non-profit organization established to encourage and foster the education of computer science, enginerring, and specifically programming.
                 </p>
 
                 <p className="who-are-we">
