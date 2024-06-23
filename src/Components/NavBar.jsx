@@ -59,7 +59,7 @@ export default function NavBar() {
               </ul>
             </li>
             <li>
-              <a href="#" className="btn dark">Join</a>
+              <a href="volunteer" className="btn dark">Join</a>
             </li>
           </ul>
         </nav>

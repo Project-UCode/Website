@@ -16,7 +16,7 @@ export default function Home() {
                         Get started with you coding journey today with free live classes and integrated assignments, you will have all the resources you need to succeed.
                     </p>
 
-                    <a href="#" className="btn light enroll-icon">Join Today!</a>
+                    <a href="volunteer" className="btn light enroll-icon">Join Today!</a>
                 </div>
 
                 <div className="right">
