@@ -916,9 +916,9 @@ h2 {
   margin-bottom: 0;
 }
 
-.testimonials-section .desktop-btn {
+/* .testimonials-section .desktop-btn {
   display: none;
-}
+} */
 
 .testimonials-section .mobile-btn {
   display: block;
@@ -1061,6 +1061,11 @@ nav.mobile-nav.scrolled {
   margin-bottom: 2lh;
 }
 
+h4 {
+  margin-left: 1lh;
+  margin-right: 1lh;
+}
+
 .mobile-menu-container.active .close-icon {
   opacity: 1;
   pointer-events: auto;
@@ -1102,11 +1107,17 @@ nav.mobile-nav.scrolled {
   padding: 0 1lh 0 1lh;
 }
 
+
 /* Testimonials Section */
 .testimonials-section {
   flex-direction: column;
   text-align: center;
   margin-top: 4vh;
+}
+
+.testimonials-section .left h2 {
+  font-size: 6vh;
+  margin-bottom: 2vh;
 }
 
 .testimonials-section .left,

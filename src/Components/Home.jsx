@@ -56,7 +56,6 @@ export default function Home() {
             <a href="about" className="btn light desktop-btn">Learn More</a>
             </div>
 
-            <a href="about" className="btn light mobile-btn">Learn More</a>
         </section>
         </div>
 
