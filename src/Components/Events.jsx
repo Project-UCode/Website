@@ -21,10 +21,10 @@ export default function Events() {
 
             <div className="right">
 
-                <div className="features">
+                <div className="features events-wg">
                     <h2>WGHS CSA Review</h2>
                     <p>
-                        Volunteers went over AP Computer Science A review material at Walnut Grove High School.
+                        Volunteers went over AP® Computer Science A review material at Walnut Grove High School.
                     </p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export default function Events() {
                 <div className="features">
                         <h2>PHS CSA Review</h2>
                         <p>
-                            Volunteers assisted students staying after school for AP Computer Science A tutoring at Prosper High School. 
+                            Volunteers assisted students staying after school for AP® Computer Science A tutoring at Prosper High School. 
                         </p>
                 </div>
             </div>
@@ -53,7 +53,7 @@ export default function Events() {
                 <div className="features">
                     <h2>CSA Review Webinar</h2>
                     <p>
-                        Project UCode hosted an global webinar preparing students for the AP Computer Science A AP Exam. Former students who recieved a 5
+                        Project UCode hosted an global webinar preparing students for the AP® Computer Science A Exam. Former students who recieved a 5
                         on the original test shared their tips for the exam. 
                     </p>
                     </div>
