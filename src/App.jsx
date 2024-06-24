@@ -8,6 +8,7 @@ import VolunteerPage from './VolunteerPage';
 import ChaptersPage from './ChaptersPage';
 import EventsPage from './EventsPage';
 import LivePage from './LivePage';
+import CoursesPage from './CoursesPage';
 import Animations from './Components/Animations';
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="chapters" element={<ChaptersPage />} />
         <Route path="events" element={<EventsPage />} />
         <Route path="live" element={<LivePage />} />
+        <Route path="courses" element={<CoursesPage />} />
       </Routes>
     </div>
   );

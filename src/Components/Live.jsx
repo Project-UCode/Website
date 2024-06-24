@@ -16,7 +16,7 @@ export default function Live() {
         <section id="" className="live-about-section hiddenimgleft">
             <h2 className="">What Is UCode Live?</h2>
             <p id="live-what-txt">
-            UCode Live offers a variety of workshops, bootcamps, and webinars hosted by Project UCode.<br />
+            UCode Live offers a variety of <b>workshops</b>, <b>bootcamps</b>, and <b>webinars</b> hosted by Project UCode.<br />
             Of course, they are all free as our mission is to provide a platform where all students can<br />
             get quality education at no cost.
             </p>
