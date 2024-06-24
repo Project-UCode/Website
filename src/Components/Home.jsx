@@ -34,7 +34,7 @@ export default function Home() {
         </header>
         {/* <!-- End of the header section --> */}
 
-        <div className="wrapper about-mission">
+        <div className="wrapper about-mission hiddenimgleft">
         <section className="testimonials-section">
             <div className="left homeLeft">
                 <img className="who-are-we-image" id="learn-home" src="Images/ucodelearn.png" alt="" />

@@ -15,7 +15,7 @@ export default function About() {
 
         {/* <!-- End of the header section --> */}
 
-        <div className="wrapper about-mission">
+        <div className="wrapper about-mission hiddenimgleft">
             <section className="testimonials-section">
             <div className="left">
                 <img src="Images/ucodemission.png" alt="mission-photo" />
@@ -62,7 +62,7 @@ export default function About() {
                 <img src="Images/akhilphoto.png" alt="akhil-photo" />
             </div>
 
-            <div className="right">
+            <div className="right hiddenimgright">
                 <h2>Akhil Kotturi</h2>
                 <h3></h3>
                 <div className="features team-txt">
@@ -78,7 +78,7 @@ export default function About() {
                 <img src="Images/puranjayphoto.png" alt="puranjay-photo" />
             </div>
 
-            <div className="right">
+            <div className="right hiddenimgright">
                 <h2>Puranjay Prashanth</h2>
                 <h3></h3>
                 <div className="features team-txt">

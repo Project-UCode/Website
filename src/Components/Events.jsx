@@ -1,4 +1,7 @@
+import React, { useEffect } from 'react';
+
 export default function Events() {
+
     return (
         <>
         <header id="eventsHeader">
@@ -15,7 +18,7 @@ export default function Events() {
 
         <div className="wrapper">
             <section id="chapter-testimonials-section" className="testimonials-section">
-            <div className="left">
+            <div className="left hiddenimgleft">
                 <img src="Images/wghscsa.png" alt="volunteer-photo" />
             </div>
 
@@ -39,12 +42,12 @@ export default function Events() {
                 </div>
             </div>
 
-            <div className="right">
+            <div className="right hiddenimgright">
                 <img className="phscsa" src="Images/phscsa.png" alt="volunteer-photo" />
             </div>
             </section>
             <section id="chapter-testimonials-section" className="testimonials-section">
-            <div className="left">
+            <div className="left hiddenimgleft">
                 <img src="Images/onlinecsa.png" alt="volunteer-photo" />
             </div>
 

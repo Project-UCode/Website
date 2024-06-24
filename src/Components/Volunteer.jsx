@@ -13,7 +13,7 @@ export default function Volunteer() {
 
         {/* <!-- End of the header section --> */}
 
-        <div className="wrapper">
+        <div className="wrapper hiddenimgleft">
             <section id="volunteer-testimonials-section" className="testimonials-section">
             <div className="left">
                 <img src="Images/ucodevolunteer.png" alt="volunteer-photo" />

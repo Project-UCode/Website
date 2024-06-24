@@ -13,7 +13,7 @@ export default function Live() {
 
         {/* <!-- End of the header section --> */}
 
-        <section id="" className="live-about-section">
+        <section id="" className="live-about-section hiddenimgleft">
             <h2 className="">What Is UCode Live?</h2>
             <p id="live-what-txt">
             UCode Live offers a variety of workshops, bootcamps, and webinars hosted by Project UCode.<br />

@@ -804,6 +804,36 @@ nav.mobile-nav,
 display: none;
 }
 
+
+/* Animations */
+
+.hiddenimgleft {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+
+.showimgleft {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hiddenimgright {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(+100%);
+  transition: all 1.5s;
+}
+
+.showimgright {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
 @media (min-width: 801px) {
   #homeHeader {
     background-image: url("/public/Images/homeBack.png");
