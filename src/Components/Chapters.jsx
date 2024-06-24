@@ -33,7 +33,7 @@ export default function Chapters() {
                 </p>
                 </div>
 
-                <a href="https://forms.gle/iv9nHQTRghQAbA6x7" className="btn light desktop-btn">Start A Chapter Today!</a>
+                <a href="https://forms.gle/iv9nHQTRghQAbA6x7" target="_blank" className="btn light desktop-btn">Start A Chapter Today!</a>
             </div>
             </section>
         </div>

@@ -37,11 +37,11 @@ export default function NavBar() {
               <a href="about">About <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
                   <li><a href="events">Events</a></li>
-                  <li><a href="https://www.instagram.com/projectucode/">Media</a></li>
+                  <li><a href="https://www.instagram.com/projectucode/" target="_blank">Media</a></li>
               </ul>
             </li>
             <li className="navLet">
-              <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" target="_blank">Learn <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
                   <li><a href="#">Courses</a></li>
                   <li><a href="live">UCode Live</a></li>
@@ -55,7 +55,7 @@ export default function NavBar() {
               <ul className='navDrop navLet contNav'>
                   <li><a href="volunteer">Volunteer</a></li>
                   <li><a href="chapters">Chapters</a></li>
-                  <li><a href="https://discord.gg/SE8m5xsuay">Discord</a></li>
+                  <li><a href="https://discord.gg/SE8m5xsuay" target="_blank">Discord</a></li>
               </ul>
             </li>
             <li>
@@ -79,12 +79,12 @@ export default function NavBar() {
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="events">Events</a></li>
-            <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Learn</a></li>
+            <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" target="_blank">Learn</a></li>
             <li><a href="live">UCode Live</a></li>
             <li><a href="volunteer">Volunteer</a></li>
             <li><a href="chapters">Chapters</a></li>
             <li><a href="#">Donate</a></li>
-            <li><a href="mailto:support@projectucode.org">Contact Us</a></li>
+            <li><a href="mailto:support@projectucode.org" target="_blank">Contact Us</a></li>
             <li><a href="#" className="btn dark">Join</a></li>
           </ul>
         </div>

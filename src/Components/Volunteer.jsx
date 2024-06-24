@@ -33,7 +33,7 @@ export default function Volunteer() {
                 </p>
                 </div>
 
-                <a href="https://forms.gle/2KzhePquuNrhmY6m8" className="btn light desktop-btn">Become a Volunteer!</a>
+                <a href="https://forms.gle/2KzhePquuNrhmY6m8" target="_blank" className="btn light desktop-btn">Become a Volunteer!</a>
             </div>
             </section>
         </div>
