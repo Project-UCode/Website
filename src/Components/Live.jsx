@@ -48,7 +48,7 @@ export default function Live() {
                 </div>
             </section>
             <section id="chapter-testimonials-section" className="testimonials-section live-event-left">
-            <div className="left">
+            <div className="left course-left">
                 <div className="features">
                     <span className="minitext bluemini">Beginner</span> <span className="minitext redmini">Bootcamp</span>
                         <h2>Intro to HTML & CSS Bootcamp</h2>

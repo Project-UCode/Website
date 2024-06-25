@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             </div>
 
-            <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" className="btn light">All Courses</a>
+            <a href="courses" className="btn light">All Courses</a>
         </div>
         </section>
 

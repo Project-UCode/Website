@@ -79,7 +79,7 @@ export default function NavBar() {
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="events">Events</a></li>
-            <li><a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" target="_blank">Learn</a></li>
+            <li><a href="courses">Courses</a></li>
             <li><a href="live">UCode Live</a></li>
             <li><a href="volunteer">Volunteer</a></li>
             <li><a href="chapters">Chapters</a></li>
