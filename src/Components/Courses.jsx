@@ -109,6 +109,10 @@ export default function Courses() {
                 </div>
             </section>
 
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> a6c98dc3bdf1e0b862559d5880262ef5dd949710
         </div>
         </>
     )
