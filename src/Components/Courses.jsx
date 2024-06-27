@@ -75,6 +75,44 @@ export default function Courses() {
             <div className="left course-left">
                 <div className="features">
                     <span className="minitext bluemini">Beginner</span> <span className="minitext redmini">Course</span>
+                        <h2>Intro to Java</h2>
+                        <p>
+                            This approximately 10 hour week long course will teach of the basics of Java, preparing students for the AP® Computer A class and exam.
+                        </p>
+                </div>
+
+                <a href="#" className="btn light desktop-btn">Coming Soon</a>
+            </div>
+
+
+            <div className="right">
+                <img className="phscsa" src="Images/javalogo.png" alt="volunteer-photo" />
+            </div>
+            </section>
+
+            <section id="chapter-testimonials-section" className="testimonials-section live-event-right">
+            <div className="left">
+                <img src="Images/scratchlogo.png" alt="volunteer-photo" />
+            </div>
+
+            <div className="right">
+
+                <div className="features live-event-text">
+                    <span className="minitext bluemini">Beginner</span> <span className="minitext redmini">Course</span> 
+                    <h2>Intro To Scratch</h2>
+                    <p>
+                        This approximately 10 hour couse will teach of the basics of Scratch. 
+                    </p>
+                    </div>
+
+                    <a href="" target="_blank" className="btn light desktop-btn">Coming Soon</a>
+                </div>
+            </section>
+
+            <section id="" className="testimonials-section live-event-left">
+            <div className="left course-left">
+                <div className="features">
+                    <span className="minitext bluemini">Beginner</span> <span className="minitext redmini">Course</span>
                         <h2>Intro to HTML & CSS</h2>
                         <p>
                             This approximately 10 hour week long course will teach of the basics of HTML & CSS, ranging from basic tags to CSS animations.
@@ -109,7 +147,43 @@ export default function Courses() {
                 </div>
             </section>
 
-            
+            <section id="" className="testimonials-section live-event-left">
+            <div className="left course-left">
+                <div className="features">
+                    <span className="minitext bluemini">Beginner</span> <span className="minitext redmini">Course</span>
+                        <h2>Intro to Java</h2>
+                        <p>
+                            This approximately 10 hour week long course will teach of the basics of Java, preparing students for the AP® Computer A class and exam.
+                        </p>
+                </div>
+
+                <a href="#" className="btn light desktop-btn">Coming Soon</a>
+            </div>
+
+
+            <div className="right">
+                <img className="phscsa" src="Images/javalogo.png" alt="volunteer-photo" />
+            </div>
+            </section>
+
+            <section id="chapter-testimonials-section" className="testimonials-section live-event-right">
+            <div className="left">
+                <img src="Images/scratchlogo.png" alt="volunteer-photo" />
+            </div>
+
+            <div className="right">
+
+                <div className="features live-event-text">
+                    <span className="minitext bluemini">Beginner</span> <span className="minitext redmini">Course</span> 
+                    <h2>Intro To Scratch</h2>
+                    <p>
+                        This approximately 10 hour couse will teach of the basics of Scratch. 
+                    </p>
+                    </div>
+
+                    <a href="" target="_blank" className="btn light desktop-btn">Coming Soon</a>
+                </div>
+            </section>
         </div>
         </>
     )
