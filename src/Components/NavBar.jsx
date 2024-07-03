@@ -41,7 +41,7 @@ export default function NavBar() {
               </ul>
             </li>
             <li className="navLet">
-              <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" target="_blank">Learn <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="courses">Learn <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
                   <li><a href="courses">Courses</a></li>
                   <li><a href="live">UCode Live</a></li>
