@@ -13,15 +13,15 @@ export default function Footer() {
                         </li>
 
                         <li>
-                            <a href="mailto:support@projectucode.org">Contact Us</a>
+                            <a href="mailto:support@projectucode.org" target="_blank">Contact Us</a>
                         </li>
 
                         <li>
-                            <a href="https://drive.google.com/file/d/1mMSoepA8uy4SQNZyev5_NRNcS3eTLolC/view?usp=sharing">Privacy Policy</a>
+                            <a href="https://drive.google.com/file/d/1mMSoepA8uy4SQNZyev5_NRNcS3eTLolC/view?usp=sharing" target="_blank">Privacy Policy</a>
                         </li>
 
                         <li>
-                            <a href="https://drive.google.com/file/d/1__1xeszHEW3GdMBzNBrDQOD61SleHgkS/view?usp=sharing">Terms & Conditions</a>
+                            <a href="https://drive.google.com/file/d/1__1xeszHEW3GdMBzNBrDQOD61SleHgkS/view?usp=sharing" target="_blank">Terms & Conditions</a>
                         </li>
                         </ul>
                     </div>
@@ -31,19 +31,19 @@ export default function Footer() {
 
                         <ul>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ">Youtube</a>
+                            <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" target="_blank">Youtube</a>
                         </li>
 
                         <li>
-                            <a href="https://www.linkedin.com/company/project-ucode/">Linkedin</a>
+                            <a href="https://www.linkedin.com/company/project-ucode/" target="_blank">Linkedin</a>
                         </li>
 
                         <li>
-                            <a href="https://www.instagram.com/projectucode/">Instagram</a>
+                            <a href="https://www.instagram.com/projectucode/" target="_blank">Instagram</a>
                         </li>
 
                         <li>
-                            <a href="https://discord.gg/SE8m5xsuay">Discord</a>
+                            <a href="https://discord.gg/SE8m5xsuay" target="_blank">Discord</a>
                         </li>
                         </ul>
                     </div>
