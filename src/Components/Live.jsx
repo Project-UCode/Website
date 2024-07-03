@@ -44,7 +44,7 @@ export default function Live() {
                     </p>
                     </div>
 
-                    <a href="https://forms.gle/BiVgPNZ3cnAHd7Dn6" target="_blank" className="btn light desktop-btn">Sign Up</a>
+                    <a href="pythonlive" target="_blank" className="btn light desktop-btn">Learn More</a>
                 </div>
             </section>
             <section id="chapter-testimonials-section" className="testimonials-section live-event-left">
