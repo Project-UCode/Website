@@ -5,7 +5,7 @@ export default function Home() {
         <>
         <header id="homeHeader" className={homeStyles.header}>
             <div className="wrapper">
-                <div id="homeHeroSection" className="hero-section">
+                <div id="homeHeroSection" className="hero-section hiddenimgleft hiddenimgleftq">
                 <div className="left homeLeft">
                     <h1>
                         It’s Time To <br />

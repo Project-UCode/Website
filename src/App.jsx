@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import VolunteerPage from './VolunteerPage';
+import PartnerPage from './PartnerPage';
 import ChaptersPage from './ChaptersPage';
 import EventsPage from './EventsPage';
 import LivePage from './LivePage';
@@ -25,6 +26,7 @@ function App() {
         <Route path="about" element={<AboutPage />} />
         <Route path="home" element={<HomePage />} />
         <Route path="volunteer" element={<VolunteerPage />} />
+        <Route path="partner" element={<PartnerPage />} />
         <Route path="chapters" element={<ChaptersPage />} />
         <Route path="events" element={<EventsPage />} />
         <Route path="live" element={<LivePage />} />

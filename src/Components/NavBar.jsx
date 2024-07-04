@@ -51,9 +51,10 @@ export default function NavBar() {
               <a href="#">Donate</a>
             </li>
             <li className="navLet">
-              <a href="mailto:support@projectucode.org">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="mailto:support@projectucode.org" target="_blank">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet contNav'>
                   <li><a href="volunteer">Volunteer</a></li>
+                  <li><a href="partner">Partner</a></li>
                   <li><a href="chapters">Chapters</a></li>
                   <li><a href="https://discord.gg/SE8m5xsuay" target="_blank">Discord</a></li>
               </ul>
@@ -84,6 +85,7 @@ export default function NavBar() {
             <li><a href="volunteer">Volunteer</a></li>
             <li><a href="chapters">Chapters</a></li>
             <li><a href="#">Donate</a></li>
+            <li><a href="partner">Partner</a></li>
             <li><a href="mailto:support@projectucode.org" target="_blank">Contact Us</a></li>
             <li><a href="#" className="btn dark">Join</a></li>
           </ul>

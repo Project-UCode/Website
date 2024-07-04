@@ -43,13 +43,15 @@ export default function About() {
         {/* <!-- End of testimonials Section --> */}
 
         <section id="whatWeDoSection" className="courses-section">
-            <h2 className="light">What We Do?</h2>
-            <h4 className="whatTxt">
-            <b>Free</b> workshops over various programming languages and computer science concepts. <br />
-            <b>Free</b> online courses over various technical topics. <br />
-            In school volunteering events and tutoring programs. <br />
-            Spread educational CS content throughout social media. - Learn with UCode <br />
-            </h4>
+            <div className='hiddenimgleft'>
+                <h2 className="light">What We Do?</h2>
+                <h4 className="whatTxt">
+                <b>Free</b> workshops over various programming languages and computer science concepts. <br />
+                <b>Free</b> online courses over various technical topics. <br />
+                In school volunteering events and tutoring programs. <br />
+                Spread educational CS content throughout social media. - Learn with UCode <br />
+                </h4>
+            </div>
         </section>
 
         <div id='pushUp'>

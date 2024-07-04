@@ -83,6 +83,12 @@ background-image: url("/public/Images/homeBackAbout.png");
   background-image: url("/public/Images/chapterBack.png");
 }
 
+#partnerHeader {
+  height: 50vh;
+  background-image: url("/public/Images/partnerBack.png");
+}
+
+
 #eventsHeader {
   height: 50vh;
   background-image: url("/public/Images/eventsBack.png");
@@ -210,7 +216,7 @@ nav {
 
 .contNav {
   width: 9rem;
-  top: .9rem;
+  top: .6rem;
   li {
     &:hover,
     &:focus {
@@ -836,6 +842,10 @@ display: none;
   filter: blur(1px);
   transform: translateX(-100%);
   transition: all 1.5s;
+}
+
+.hiddenimgleftq {
+  transition: all 1s;
 }
 
 .showimgleft {
