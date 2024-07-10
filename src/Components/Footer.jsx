@@ -31,19 +31,19 @@ export default function Footer() {
 
                         <ul>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" target="_blank">Youtube</a>
+                            <a href="https://www.youtube.com/channel/UCIKvJ8iM6Q7Py8JSqOwAMUQ" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
                         </li>
 
                         <li>
-                            <a href="https://www.linkedin.com/company/project-ucode/" target="_blank">Linkedin</a>
+                            <a href="https://www.linkedin.com/company/project-ucode/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
                         </li>
 
                         <li>
-                            <a href="https://www.instagram.com/projectucode/" target="_blank">Instagram</a>
+                            <a href="https://www.instagram.com/projectucode/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
                         </li>
 
                         <li>
-                            <a href="https://discord.gg/SE8m5xsuay" target="_blank">Discord</a>
+                            <a href="https://discord.gg/SE8m5xsuay" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
                         </li>
                         </ul>
                     </div>
@@ -52,7 +52,7 @@ export default function Footer() {
                         <h3>Contact Us</h3>
 
                         <ul>
-                        <li>info@projectucode.org</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@projectucode.org</li>
                         </ul>
 
                         <div className="social">
