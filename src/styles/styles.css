@@ -1074,10 +1074,9 @@ nav.mobile-nav,
     padding-right: 1lh;
     top: 129px;
   }
-
-  .lessoncontent-pd {
+  
+  .lessoncontent.open {
     padding-left: 300px;
-    transform: left .7s;
   }
 
   .lessoncontent {
@@ -1431,7 +1430,6 @@ nav.mobile-nav,
 
   .coursesidebar {
     top: 200px;
-    transition: left .4s;
   }
 
   .mobile-menu-container.active .close-icon {

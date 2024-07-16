@@ -8,35 +8,8 @@ import Footer from "./Footer";
 
 export default function LearnPython() {
 
-    const [isRendered, setIsRendered] = useState(false);
-
-    useEffect(() => {
-        console.log("useEffect called");
-
-        const showCourseSidebar = (toggleId, coursesidebarId, lessoncontentId) => {
-            const toggle = document.getElementById(toggleId);
-            const coursesidebar = document.getElementById(coursesidebarId);
-            const lessoncontent = document.getElementById(lessoncontentId);
-
-            console.log("toggle:", toggle);
-            console.log("coursesidebar:", coursesidebar);
-            console.log("lessoncontent:", lessoncontent);
-
-            if (toggle && coursesidebar && lessoncontent) {
-                toggle.addEventListener('click', () => {
-                    console.log("Toggle clicked");
-                    coursesidebar.classList.toggle('show-coursesidebar');
-                    lessoncontent.classList.toggle('lessoncontent-pd');
-                });
-            }
-        };
-
-        showCourseSidebar('header-toggle', 'coursesidebar', 'lessoncontent');
-    }, [isRendered]);
-
-    useEffect(() => {
-        setIsRendered(true);
-    }, []);
+    const[isOpen ,setIsOpen] = useState(false);
+    const toggle = () => setIsOpen (!isOpen);
 
     return (
         <>
@@ -51,7 +24,7 @@ export default function LearnPython() {
                     <a href="courses" className="coursenavlink"><i class="fa-solid fa-house"></i></a> / <a href="#" className="coursenavlink">Introduction to Python</a> / Introduction</p>
                 <ul>
                     <li>
-                        <div className="btn light desktop-btn navbuttonmini header__toggle" id="header-toggle"><i class="fa-solid fa-bars"></i></div>
+                        <div className="btn light desktop-btn navbuttonmini header__toggle" onClick={toggle} id="header-toggle"><i class="fa-solid fa-bars"></i></div>
                     </li>
                     <li>
                         <a href="#" className="btn light desktop-btn navbutton"><i class="fa-solid fa-chevron-left"></i></a>
@@ -63,7 +36,7 @@ export default function LearnPython() {
             </div>
             {/* Sidebar Section */}
             <div className="">
-                <div className="coursesidebar" id="coursesidebar">
+                <div className="coursesidebar" style={{left: isOpen ? "0" : "-100%"}} id="coursesidebar">
                     <div className="coursesidebar__container">
                         <div className="coursesidebar__content">
                             <div className="coursesidebar__list">
@@ -145,7 +118,7 @@ export default function LearnPython() {
                     </div>
                 </div>
 
-                <main className="lessoncontent" id="lessoncontent">
+                <main className={`lessoncontent ${isOpen ? 'open' : ''}`} id="lessoncontent">
                     <h2>Hello</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue mauris. Tristique risus nec feugiat in. Ultricies mi quis hendrerit dolor magna. Augue interdum velit euismod in pellentesque massa placerat. Id volutpat lacus laoreet non curabitur gravida arcu ac. Semper risus in hendrerit gravida rutrum quisque. Ut morbi tincidunt augue interdum velit. Libero enim sed faucibus turpis in eu mi bibendum neque. Ac ut consequat semper viverra nam libero justo laoreet sit. Posuere morbi leo urna molestie at. Ipsum dolor sit amet consectetur adipiscing elit. Viverra aliquet eget sit amet. Tortor posuere ac ut consequat semper. Nunc sed augue lacus viverra. Aliquet lectus proin nibh nisl condimentum. Nec feugiat in fermentum posuere. Malesuada proin libero nunc consequat interdum varius sit. Diam vulputate ut pharetra sit amet aliquam id. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
 
