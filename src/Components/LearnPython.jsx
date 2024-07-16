@@ -35,7 +35,6 @@ export default function LearnPython() {
     }, [isRendered]);
 
     useEffect(() => {
-        // Force a re-render after the initial render
         setIsRendered(true);
     }, []);
 
@@ -69,8 +68,8 @@ export default function LearnPython() {
                         <div className="coursesidebar__content">
                             <div className="coursesidebar__list">
                                 <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Introd </span>
-                                    <span className="coursesidebar__floating">Introd </span>
+                                    <span className="coursesidebar__link-name">Introduction </span>
+                                    <span className="coursesidebar__floating">Introduction </span>
                                 </a>
 
                                 <a href="#" className="coursesidebar__link">
