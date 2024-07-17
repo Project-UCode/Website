@@ -1,6 +1,9 @@
+import Animations from "./Animations"
+
 export default function Volunteer() {
     return (
         <>
+        <Animations />
         <header id="volunteerHeader">
             <div className="wrapper">
             <div id="aboutHeroSection" className="hero-section">

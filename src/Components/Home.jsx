@@ -1,8 +1,10 @@
 import homeStyles from './compStyles/home.module.css';
+import Animations from './Animations';
 
 export default function Home() {
     return (
         <>
+        <Animations />
         <header id="homeHeader" className={homeStyles.header}>
             <div className="wrapper">
                 <div id="homeHeroSection" className="hero-section hiddenimgleft hiddenimgleftq">

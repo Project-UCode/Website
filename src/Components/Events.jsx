@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
+import Animations from './Animations';
 
 export default function Events() {
 
     return (
         <>
+        <Animations />
         <header id="eventsHeader">
             <div className="wrapper">
             <div id="aboutHeroSection" className="hero-section">

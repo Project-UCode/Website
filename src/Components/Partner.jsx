@@ -1,6 +1,9 @@
+import Animations from "./Animations"
+
 export default function Partner() {
     return (
         <>
+        <Animations />
         <header id="partnerHeader">
             <div className="wrapper">
             <div id="aboutHeroSection" className="hero-section">

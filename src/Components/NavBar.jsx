@@ -28,23 +28,23 @@ export default function NavBar() {
     <>
       <div className="wrapper">
         <nav className={scrolled ? 'scrolled' : ''}>
-        <a href="home" ><div className="logo">Project UCode</div></a>
+        <Link to="/home" ><div className="logo">Project UCode</div></Link>
           <ul>
             <li className="navLet">
-                <a href="home">Home</a>
+                <Link to="/home">Home</Link>
             </li>
             <li className="navLet">
               <a href="about">About <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
-                  <li><a href="events">Events</a></li>
+                  <li><Link to="/events">Events</Link></li>
                   <li><a href="https://www.instagram.com/projectucode/" target="_blank">Media</a></li>
               </ul>
             </li>
             <li className="navLet">
               <a href="courses">Learn <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet twoEl'>
-                  <li><a href="courses">Courses</a></li>
-                  <li><a href="live">UCode Live</a></li>
+                  <li><Link to="/courses">Courses</Link></li>
+                  <li><Link to="/live">UCode Live</Link></li>
               </ul>
             </li>
             <li className="navLet">
@@ -53,9 +53,9 @@ export default function NavBar() {
             <li className="navLet">
               <a href="mailto:support@projectucode.org" target="_blank">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
               <ul className='navDrop navLet contNav'>
-                  <li><a href="volunteer">Volunteer</a></li>
-                  <li><a href="partner">Partner</a></li>
-                  <li><a href="chapters">Chapters</a></li>
+                  <li><Link to="/volunteer">Volunteer</Link></li>
+                  <li><Link to="/partner">Partner</Link></li>
+                  <li><Link to="/chapters">Chapters</Link></li>
                   <li><a href="https://discord.gg/SE8m5xsuay" target="_blank">Discord</a></li>
               </ul>
             </li>

@@ -1,8 +1,10 @@
 import aboutStyles from './compStyles/about.module.css';
+import Animations from './Animations';
 
 export default function About() {
     return (
         <>
+        <Animations />
         <header id="aboutHeader" className={aboutStyles.header}>
             <div className="wrapper">
             <div id="aboutHeroSection" className="hero-section">

@@ -12,6 +12,7 @@ import LivePage from './LivePage';
 import CoursesPage from './CoursesPage';
 import PythonLivePage from './PythonLivePage';
 import LearnPythonPage from './LearnPythonPage';
+import BaseLayout from './Layouts/BaseLayout';
 import Animations from './Components/Animations';
 
 
@@ -30,7 +31,8 @@ function App() {
         <Route path="partner" element={<PartnerPage />} />
         <Route path="chapters" element={<ChaptersPage />} />
         <Route path="events" element={<EventsPage />} />
-        <Route path="live" element={<LivePage />}>
+        <Route path="live" element={<BaseLayout />}>
+          <Route index element={<LivePage />} />
           <Route path="python" element={<PythonLivePage />} />
         </Route>
         <Route path="courses" element={<CoursesPage />} />

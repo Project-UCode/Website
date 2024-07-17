@@ -1,6 +1,9 @@
+import Animations from "./Animations"
+
 export default function Live() {
     return (
         <>
+        <Animations />
         <header id="liveHeader">
             <div className="wrapper">
             <div id="aboutHeroSection" className="hero-section">
@@ -44,7 +47,7 @@ export default function Live() {
                     </p>
                     </div>
 
-                    <a href="pythonlive" className="btn light desktop-btn">Learn More</a>
+                    <a href="/live/python" className="btn light desktop-btn">Learn More</a>
                 </div>
             </section>
             <section id="chapter-testimonials-section" className="testimonials-section live-event-left">
