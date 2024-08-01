@@ -17,7 +17,7 @@ export default function Chapters() {
         {/* <!-- End of the header section --> */}
 
         <div className="wrapper hiddenimgleft">
-            <section id="chapter-testimonials-section" className="testimonials-section">
+            <section id="chapter-testimonials-section" className="testimonials-section extra_info_section">
             <div className="left">
                 <img src="Images/ucodechapter.png" alt="volunteer-photo" />
             </div>

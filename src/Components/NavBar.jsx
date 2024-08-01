@@ -51,7 +51,7 @@ export default function NavBar() {
               <a href="#">Donate</a>
             </li>
             <li className="navLet">
-              <a href="mailto:support@projectucode.org" target="_blank">Contact Us <i class="fa-solid fa-chevron-down"></i></a>
+              <Link to="/contact" target="_blank">Contact Us <i class="fa-solid fa-chevron-down"></i></Link>
               <ul className='navDrop navLet contNav'>
                   <li><Link to="/volunteer">Volunteer</Link></li>
                   <li><Link to="/partner">Partner</Link></li>
@@ -77,17 +77,17 @@ export default function NavBar() {
             <img src="Images/close-icon.svg" alt="Close Icon" />
           </div>
           <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="events">Events</a></li>
-            <li><a href="courses">Courses</a></li>
-            <li><a href="live">UCode Live</a></li>
-            <li><a href="volunteer">Volunteer</a></li>
-            <li><a href="chapters">Chapters</a></li>
+          <li><Link to="/home">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/courses">Courses</Link></li>
+            <li><Link to="/live">UCode Live</Link></li>
+            <li><Link to="/volunteer">Volunteer</Link></li>
+            <li><Link to="/chapters">Chapters</Link></li>
             <li><a href="#">Donate</a></li>
-            <li><a href="partner">Partner</a></li>
+            <li><Link to="/partner">Partner</Link></li>
             <li><a href="mailto:support@projectucode.org" target="_blank">Contact Us</a></li>
-            <li><a href="#" className="btn dark">Join</a></li>
+            <li><Link to="/volunteer" className="btn dark">Join</Link></li>
           </ul>
         </div>
       </div>

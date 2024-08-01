@@ -17,7 +17,7 @@ export default function Partner() {
         {/* <!-- End of the header section --> */}
 
         <div className="wrapper hiddenimgleft">
-            <section id="volunteer-testimonials-section" className="testimonials-section">
+            <section id="volunteer-testimonials-section" className="testimonials-section extra_info_section">
             <div className="left">
                 <img src="Images/ucodepartner.png" alt="volunteer-photo" />
             </div>

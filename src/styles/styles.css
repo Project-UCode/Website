@@ -767,6 +767,7 @@ h2 {
   padding-left: 1lh;
 }
 
+
 .only-text-info {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1469,6 +1470,45 @@ nav.mobile-nav,
     padding-top: 5vh;
   }
 
+  .abtTeam {
+    flex-direction: column-reverse;
+  }
+
+  .event_left {
+    flex-direction: column-reverse;
+    gap: 0lh
+  }
+
+  .event_right {
+    flex-direction: column;
+    gap: 0lh
+  }
+
+  .extra_info_section {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .live-event-right {
+    flex-direction: column-reverse;
+    padding-bottom: 1lh;
+    gap: 0lh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: solid;
+    border-width: 0 0 0 8px;
+    border-color: var(--ucode-blue);
+    box-shadow: 5px 0px 9px -2px rgba(0, 0, 0, .2);
+    padding-right: 1lh;
+    padding-left: 1lh;
+  }
+
+  .live-event-left {
+    gap: 0lh
+  }
+
   .team-txt {
     padding: 0 1lh 0 1lh;
   }
@@ -1476,7 +1516,6 @@ nav.mobile-nav,
 
   /* Testimonials Section */
   .testimonials-section {
-    flex-direction: column;
     text-align: center;
     margin-top: 4vh;
   }

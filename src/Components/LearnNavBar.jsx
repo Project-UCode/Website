@@ -28,20 +28,20 @@ export default function LearnNavBar() {
     <>
       <div className="learnnavwrapper">
         <nav className='learnnavbar'>
-        <a href="home" ><div className="logo">Project UCode</div></a>
+        <Link to="/home" ><div className="logo">Project UCode</div></Link>
           <ul>
             <li className="navLet">
-                <a href="home">Home</a>
+                <Link to="/home">Home</Link>
             </li>
             <li className="navLet">
-              <a href="about">About</a>
+              <Link to="/about">About</Link>
               {/* <ul className='navDrop navLet twoEl'>
                   <li><a href="events">Events</a></li>
                   <li><a href="https://www.instagram.com/projectucode/" target="_blank">Media</a></li>
               </ul> */}
             </li>
             <li className="navLet">
-              <a href="courses">Learn</a>
+              <Link to="/courses">Learn</Link>
               {/* <ul className='navDrop navLet twoEl'>
                   <li><a href="courses">Courses</a></li>
                   <li><a href="live">UCode Live</a></li>
@@ -51,7 +51,7 @@ export default function LearnNavBar() {
               <a href="#">Donate</a>
             </li>
             <li className="navLet">
-              <a href="mailto:support@projectucode.org" target="_blank">Contact Us</a>
+            <Link to="/contact" target="_blank">Contact Us <i class="fa-solid fa-chevron-down"></i></Link>
               {/* <ul className='navDrop navLet contNav'>
                   <li><a href="volunteer">Volunteer</a></li>
                   <li><a href="partner">Partner</a></li>
@@ -60,7 +60,7 @@ export default function LearnNavBar() {
               </ul> */}
             </li>
             <li>
-              <a href="volunteer" className="btn dark">Join</a>
+              <Link to="/volunteer" className="btn dark">Join</Link>
             </li>
           </ul>
         </nav>
@@ -77,17 +77,17 @@ export default function LearnNavBar() {
             <img src="Images/close-icon.svg" alt="Close Icon" />
           </div>
           <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="events">Events</a></li>
-            <li><a href="courses">Courses</a></li>
-            <li><a href="live">UCode Live</a></li>
-            <li><a href="volunteer">Volunteer</a></li>
-            <li><a href="chapters">Chapters</a></li>
+            <li><Link to="/home">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/courses">Courses</Link></li>
+            <li><Link to="/live">UCode Live</Link></li>
+            <li><Link to="/volunteer">Volunteer</Link></li>
+            <li><Link to="/chapters">Chapters</Link></li>
             <li><a href="#">Donate</a></li>
-            <li><a href="partner">Partner</a></li>
+            <li><Link to="/partner">Partner</Link></li>
             <li><a href="mailto:support@projectucode.org" target="_blank">Contact Us</a></li>
-            <li><a href="#" className="btn dark">Join</a></li>
+            <li><Link to="/volunteer" className="btn dark">Join</Link></li>
           </ul>
         </div>
       </div>

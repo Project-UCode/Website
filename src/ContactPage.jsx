@@ -1,20 +1,19 @@
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
-import LearnPython from './Components/LearnPython';
+import Contact from './Components/Contact';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 
 import './styles/styles.css';
 
-function LearnPythonPage() {
+function ContactPage() {
 
   return (
     <div>
       <NavBar />
-      <LearnPython />
+      <Contact />
       <Footer />
     </div>
   );
 }
 
-export default LearnPythonPage;
+export default ContactPage;

@@ -1,6 +1,6 @@
 import Animations from "./Animations"
 
-export default function Volunteer() {
+export default function Contact() {
     return (
         <>
         <Animations />
@@ -8,7 +8,7 @@ export default function Volunteer() {
             <div className="wrapper">
             <div id="aboutHeroSection" className="hero-section">
                 <div className="middle">
-                <h1 id="abt_txt">Volunteer</h1>
+                <h1 id="abt_txt">Contact Us!</h1>
                 </div>
             </div>
             </div>
