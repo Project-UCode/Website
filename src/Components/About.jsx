@@ -18,7 +18,7 @@ export default function About() {
         {/* <!-- End of the header section --> */}
 
         <div className="wrapper about-mission hiddenimgleft">
-            <section className="testimonials-section">
+            <section className="testimonials-section extra_info_section">
             <div className="left">
                 <img src="Images/ucodemission.png" alt="mission-photo" />
             </div>
