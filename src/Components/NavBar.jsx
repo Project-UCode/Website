@@ -34,14 +34,14 @@ export default function NavBar() {
                 <Link to="/home">Home</Link>
             </li>
             <li className="navLet">
-              <a href="about">About <i class="fa-solid fa-chevron-down"></i></a>
+              <Link to="/about">About <i class="fa-solid fa-chevron-down"></i></Link>
               <ul className='navDrop navLet twoEl'>
                   <li><Link to="/events">Events</Link></li>
                   <li><a href="https://www.instagram.com/projectucode/" target="_blank">Media</a></li>
               </ul>
             </li>
             <li className="navLet">
-              <a href="courses">Learn <i class="fa-solid fa-chevron-down"></i></a>
+              <Link to="/courses">Learn <i class="fa-solid fa-chevron-down"></i></Link>
               <ul className='navDrop navLet twoEl'>
                   <li><Link to="/courses">Courses</Link></li>
                   <li><Link to="/live">UCode Live</Link></li>
@@ -68,13 +68,13 @@ export default function NavBar() {
         <nav className={`mobile-nav ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo">Project UCode</div>
           <div className="menu-icon" onClick={toggleMenu}>
-            <img src="Images/menu-icon.svg" alt="Menu Icon" />
+            <img src="../Images/menu-icon.svg" alt="Menu Icon" />
           </div>
         </nav>
 
         <div className={`mobile-menu-container ${active ? 'active' : ''}`} id="mobileMenu">
           <div className="close-icon" onClick={toggleMenu}>
-            <img src="Images/close-icon.svg" alt="Close Icon" />
+            <img src="../Images/close-icon.svg" alt="Close Icon" />
           </div>
           <ul>
           <li><Link to="/home">Home</Link></li>

@@ -29,7 +29,7 @@ export default function Courses() {
                     </p>
                     </div>
 
-                    <a href="" target="_blank" className="btn light desktop-btn">Coming Soon</a>
+                    <a href="/courses/intro-to-python" target="" className="btn light desktop-btn">Coming Soon</a>
                 </div>
             </section>
 

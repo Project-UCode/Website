@@ -16,7 +16,7 @@ import BaseLayout from './Layouts/BaseLayout';
 import Animations from './Components/Animations';
 
 // Python Lessons
-import IntroToPythonPage from './Components/pythonlessons/Introduction/IntroToPythonPage';
+import IntroToPythonPage from './Components/pythonlessons/Lessons/IntroToPythonPage';
 
 import './styles/styles.css';
 

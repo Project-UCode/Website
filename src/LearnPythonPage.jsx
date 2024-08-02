@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
-import LearnPython from './Components/LearnPython';
+import LearnPython from './Components/pythonlessons/LearnPython';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 

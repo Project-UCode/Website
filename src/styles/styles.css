@@ -243,7 +243,7 @@ nav {
 #navigation {
   display: flex;
   align-items: center;
-  padding:  .5lh 0 .5lh 1lh;
+  padding: .5lh 0 .5lh 1lh;
   justify-content: space-between;
   margin: 0 auto;
   position: sticky;
@@ -289,7 +289,7 @@ nav {
 
   @media(max-width: var(--desktop)) {
     position: fixed;
-    transform: translate3d(-250px,0,0);
+    transform: translate3d(-250px, 0, 0);
   }
 }
 
@@ -422,7 +422,7 @@ nav ul li a {
   align-items: center;
   column-gap: 1.5rem;
   padding: 1rem;
-  
+
 }
 
 a.coursesidebar__link {
@@ -717,6 +717,36 @@ section p {
   margin-bottom: 6lh;
 }
 
+/* Course Syllabus Section */
+.syl_title {
+  font-size: 70px;
+  text-align: center;
+}
+
+.unit_module {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1lh;
+  margin-top: 0px;
+  padding: 25px;
+  border: solid;
+  border-radius: 20px;
+  box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, .2);
+}
+
+.full_syllabus {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5lh;
+  gap: 3lh;
+}
+
+.lessons_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 /* Live About Section */
 
 .live-about-section {
@@ -763,6 +793,12 @@ h2 {
   border-width: 0 0 0 8px;
   border-color: var(--ucode-blue);
   box-shadow: 5px 0px 9px -2px rgba(0, 0, 0, .2);
+  padding-right: 1lh;
+  padding-left: 1lh;
+}
+
+.course-info {
+  border-radius: 20px;
   padding-right: 1lh;
   padding-left: 1lh;
 }
@@ -1066,7 +1102,7 @@ nav.mobile-nav,
   .homeinfohome {
     margin-left: 50px;
   }
-  
+
   #navigation {
     padding-left: 0;
     /* width: 1134px; */
@@ -1075,7 +1111,7 @@ nav.mobile-nav,
     padding-right: 1lh;
     top: 129px;
   }
-  
+
   .lessoncontent.open {
     padding-left: 300px;
   }
@@ -1267,6 +1303,7 @@ nav.mobile-nav,
     grid-column: 1 / 3;
   }
 }
+
 /* Existing CSS should remain unchanged */
 
 /* Add to the existing styles.css for mobile view */
@@ -1291,7 +1328,7 @@ nav.mobile-nav,
     width: 300px;
     transform: width .4s;
   } */
-  
+
   .coursesidebar__container {
     padding-bottom: 4rem;
     overflow-y: scroll;
@@ -1321,7 +1358,7 @@ nav.mobile-nav,
   }
 
   #navigation {
-    padding:  .5lh .25lh .5lh .25lh;
+    padding: .5lh .25lh .5lh .25lh;
   }
 
   .menu-icon {
@@ -1509,6 +1546,10 @@ nav.mobile-nav,
     gap: 0lh
   }
 
+  .course-info {
+    flex-direction: column-reverse;
+  }
+
   .team-txt {
     padding: 0 1lh 0 1lh;
   }
@@ -1540,6 +1581,32 @@ nav.mobile-nav,
   .testimonials-section .right h2 {
     font-size: 6vh;
     margin-bottom: 2vh;
+  }
+
+  /* Course Syllabus Section */
+  .syl_title {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  
+  .unit_module {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1lh;
+    margin-top: 0lh;
+  }
+
+  .full_syllabus {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5lh;
+    gap: 2lh;
+  }
+  
+  .lessons_grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   /* Courses Section */
