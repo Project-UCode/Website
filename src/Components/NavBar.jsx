@@ -28,10 +28,10 @@ export default function NavBar() {
     <>
       <div className="wrapper">
         <nav className={scrolled ? 'scrolled' : ''}>
-        <Link to="/home" ><div className="logo">Project UCode</div></Link>
+        <Link to="/" ><div className="logo">Project UCode</div></Link>
           <ul>
             <li className="navLet">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
             </li>
             <li className="navLet">
               <Link to="/about">About <i class="fa-solid fa-chevron-down"></i></Link>
@@ -51,7 +51,7 @@ export default function NavBar() {
               <a href="#">Donate</a>
             </li>
             <li className="navLet">
-              <Link to="/contact" target="_blank">Contact Us <i class="fa-solid fa-chevron-down"></i></Link>
+              <Link to="/contact">Contact Us <i class="fa-solid fa-chevron-down"></i></Link>
               <ul className='navDrop navLet contNav'>
                   <li><Link to="/volunteer">Volunteer</Link></li>
                   <li><Link to="/partner">Partner</Link></li>
@@ -86,7 +86,7 @@ export default function NavBar() {
             <li><Link to="/chapters">Chapters</Link></li>
             <li><a href="#">Donate</a></li>
             <li><Link to="/partner">Partner</Link></li>
-            <li><a href="mailto:support@projectucode.org" target="_blank">Contact Us</a></li>
+            <li><Link to="/contact" target="_blank">Contact Us</Link></li>
             <li><Link to="/volunteer" className="btn dark">Join</Link></li>
           </ul>
         </div>
