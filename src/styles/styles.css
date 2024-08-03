@@ -781,6 +781,10 @@ section p {
   background-color: var(--dark-white);
 }
 
+.normal-text {
+  font-family: "Poppins", sans-serif;
+}
+
 .contact_section {
   justify-content: center;
 }
