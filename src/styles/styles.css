@@ -747,6 +747,63 @@ section p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* Contact Form */
+.contact_form {
+  background-color: var(--dark-blue-color);
+  padding: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.submit-button {
+  margin-top: .25rem;
+  background-color: var(--dark-blue-color);
+  border: 0 0 0 0;
+}
+
+.submit-button span {
+  color: white;
+  width: auto;
+}
+
+.contact_section {
+  justify-content: center;
+}
+
+.cont-section {
+  padding-bottom: .25rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.message_txt {
+  padding-top: .25rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.message_box {
+  height: 15rem;
+}
+
+.full_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding-bottom: .25rem;
+}
+
 /* Live About Section */
 
 .live-about-section {
@@ -1581,6 +1638,15 @@ nav.mobile-nav,
   .testimonials-section .right h2 {
     font-size: 6vh;
     margin-bottom: 2vh;
+  }
+
+  /* Contact Form */
+  .full_form {
+    flex-direction: column;
+  }
+
+  .contact_form {
+    padding-top: 1.25rem;
   }
 
   /* Course Syllabus Section */
