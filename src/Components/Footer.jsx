@@ -35,7 +35,7 @@ export default function Footer() {
                         </li>
 
                         <li>
-                            <a href="https://www.linkedin.com/company/project-ucode/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                            <a href="https://www.linkedin.com/company/projectucode/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
                         </li>
 
                         <li>
@@ -52,7 +52,7 @@ export default function Footer() {
                         <h3>Contact Us</h3>
 
                         <ul>
-                        <li><i class="fa-solid fa-envelope"></i> info@projectucode.org</li>
+                        <li><i class="fa-solid fa-envelope"></i> support@projectucode.org</li>
                         </ul>
 
                         <div className="social">

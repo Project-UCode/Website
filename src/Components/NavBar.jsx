@@ -48,7 +48,7 @@ export default function NavBar() {
               </ul>
             </li>
             <li className="navLet">
-              <a href="#">Donate</a>
+              <a href="https://gofund.me/1c048cf5" target="_blank">Donate</a>
             </li>
             <li className="navLet">
               <Link to="/contact">Contact Us <i class="fa-solid fa-chevron-down"></i></Link>
@@ -84,7 +84,7 @@ export default function NavBar() {
             <li><Link to="/live">UCode Live</Link></li>
             <li><Link to="/volunteer">Volunteer</Link></li>
             <li><Link to="/chapters">Chapters</Link></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="https://gofund.me/1c048cf5" target="_blank">Donate</a></li>
             <li><Link to="/partner">Partner</Link></li>
             <li><Link to="/contact" target="_blank">Contact Us</Link></li>
             <li><Link to="/volunteer" className="btn dark">Join</Link></li>
