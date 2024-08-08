@@ -1,9 +1,11 @@
 import aboutStyles from './compStyles/about.module.css';
 import Animations from './Animations';
+import ScrollToTop from './ScrollToTop';
 
 export default function About() {
     return (
         <>
+        <ScrollToTop />
         <Animations />
         <header id="aboutHeader" className={aboutStyles.header}>
             <div className="wrapper">

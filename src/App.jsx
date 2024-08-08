@@ -14,6 +14,7 @@ import LearnPythonPage from './LearnPythonPage';
 import ContactPage from './ContactPage';
 import BaseLayout from './Layouts/BaseLayout';
 import Animations from './Components/Animations';
+import ScrollToTop from './Components/ScrollToTop';
 
 // Python Lessons
 import IntroToPythonPage from './Components/pythonlessons/Lessons/IntroToPythonPage';

@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import Animations from './Animations';
+import ScrollToTop from './ScrollToTop';
 
 export default function Events() {
 
     return (
         <>
+            <ScrollToTop />
             <Animations />
             <header id="eventsHeader">
                 <div className="wrapper">

@@ -1,8 +1,10 @@
 import Animations from "./Animations"
+import ScrollToTop from "./ScrollToTop"
 
 export default function Live() {
     return (
         <>
+        <ScrollToTop />
         <Animations />
         <header id="liveHeader">
             <div className="wrapper">

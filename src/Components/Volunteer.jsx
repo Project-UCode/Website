@@ -1,8 +1,10 @@
 import Animations from "./Animations"
+import ScrollToTop from "./ScrollToTop"
 
 export default function Volunteer() {
     return (
         <>
+        <ScrollToTop />
         <Animations />
         <header id="volunteerHeader">
             <div className="wrapper">

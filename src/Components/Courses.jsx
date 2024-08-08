@@ -1,6 +1,9 @@
+import ScrollToTop from "./ScrollToTop";
+
 export default function Courses() {
     return (
         <>
+        <ScrollToTop />
         <header id="coursesHeader">
             <div className="wrapper">
             <div id="aboutHeroSection" className="hero-section">

@@ -1,9 +1,11 @@
 import Animations from "../Animations";
+import ScrollToTop from "../ScrollToTop";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return (
         <>
+        <ScrollToTop />
         <Animations />
         <header id="volunteerHeader">
             <div className="wrapper">

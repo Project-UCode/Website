@@ -50,7 +50,7 @@ export default function LearnNavBar() {
               <a href="#">Donate</a>
             </li>
             <li className="navLet">
-            <Link to="/contact" target="_blank">Contact Us <i class="fa-solid fa-chevron-down"></i></Link>
+            <Link to="/contact" target="_blank">Contact Us</Link>
               {/* <ul className='navDrop navLet contNav'>
                   <li><a href="volunteer">Volunteer</a></li>
                   <li><a href="partner">Partner</a></li>

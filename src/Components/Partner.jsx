@@ -1,8 +1,10 @@
 import Animations from "./Animations"
+import ScrollToTop from "./ScrollToTop"
 
 export default function Partner() {
     return (
         <>
+        <ScrollToTop />
         <Animations />
         <header id="partnerHeader">
             <div className="wrapper">

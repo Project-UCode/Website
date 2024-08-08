@@ -1,8 +1,10 @@
 import Animations from "./Animations"
+import ScrollToTop from "./ScrollToTop"
 
 export default function Chapters() {
     return (
         <>
+        <ScrollToTop />
         <Animations />
         <header id="chapterHeader">
             <div className="wrapper">

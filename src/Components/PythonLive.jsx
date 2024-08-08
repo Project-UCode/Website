@@ -1,6 +1,9 @@
+import ScrollToTop from "./ScrollToTop";
+
 export default function PythonLive() {
     return (
         <>
+            <ScrollToTop />
             <header id="pythonliveHeader">
                 <div className="wrapper">
                     <div id="aboutHeroSection" className="hero-section">
