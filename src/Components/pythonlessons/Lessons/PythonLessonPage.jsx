@@ -6,7 +6,7 @@ import LearnNavBar from "../../LearnNavBar";
 import Footer from "../../Footer";
 
 
-export default function IntroToPythonPage() {
+export default function PythonLessonPage({lesson}) {
 
     const[isOpen ,setIsOpen] = useState(false);
     const toggle = () => setIsOpen (!isOpen);
@@ -119,7 +119,7 @@ export default function IntroToPythonPage() {
                 </div>
 
                 <main className={`lessoncontent ${isOpen ? 'open' : ''}`} id="lessoncontent">
-                    <h2>Hello</h2>
+                    <h2>Hello {lesson}</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue mauris. Tristique risus nec feugiat in. Ultricies mi quis hendrerit dolor magna. Augue interdum velit euismod in pellentesque massa placerat. Id volutpat lacus laoreet non curabitur gravida arcu ac. Semper risus in hendrerit gravida rutrum quisque. Ut morbi tincidunt augue interdum velit. Libero enim sed faucibus turpis in eu mi bibendum neque. Ac ut consequat semper viverra nam libero justo laoreet sit. Posuere morbi leo urna molestie at. Ipsum dolor sit amet consectetur adipiscing elit. Viverra aliquet eget sit amet. Tortor posuere ac ut consequat semper. Nunc sed augue lacus viverra. Aliquet lectus proin nibh nisl condimentum. Nec feugiat in fermentum posuere. Malesuada proin libero nunc consequat interdum varius sit. Diam vulputate ut pharetra sit amet aliquam id. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
 
                         Maecenas volutpat blandit aliquam etiam erat. Gravida cum sociis natoque penatibus et. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Proin sagittis nisl rhoncus mattis rhoncus. Magna sit amet purus gravida quis blandit turpis cursus in. Ut consequat semper viverra nam libero justo. Mauris pharetra et ultrices neque ornare aenean euismod. Et ultrices neque ornare aenean euismod elementum. Diam maecenas sed enim ut sem viverra aliquet eget sit. Tellus integer feugiat scelerisque varius morbi. Facilisis volutpat est velit egestas dui. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.

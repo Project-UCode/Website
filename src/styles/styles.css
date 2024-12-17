@@ -108,6 +108,11 @@ a {
   background-image: url("/public/Images/pythonliveBack.png");
 }
 
+#webdevliveHeader {
+  height: 50vh;
+  background-image: url("/public/Images/webdevliveBack.png");
+}
+
 #coursesHeader {
   height: 50vh;
   background-image: url("/public/Images/coursesBack.png");

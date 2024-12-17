@@ -47,11 +47,11 @@ export default function LearnPython() {
                                 <section id="" className="unit_module">
                                     <h2>{item.unit}: {item.title}</h2>
                                     <div className="lessons_grid">
-                                        {item.lessons.map((alesson) => {
+                                        {item.lessons.map((lesson) => {
                                             return (
                                                 <div>
                                                     <p>
-                                                        {alesson}
+                                                        <a href={lesson.route}>{lesson.name}</a>
                                                     </p>
                                                 </div>
                                             );

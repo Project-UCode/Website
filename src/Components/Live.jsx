@@ -62,7 +62,7 @@ export default function Live() {
                         </p>
                 </div>
 
-                <a href="#" className="btn light desktop-btn">Coming Soon</a>
+                <a href="/live/webdev" className="btn light desktop-btn">Learn More</a>
             </div>
 
 
