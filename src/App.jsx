@@ -19,36 +19,40 @@ import ScrollToTop from './Components/ScrollToTop';
 
 // Python Lessons
 import PythonLessonPage from './Components/pythonlessons/Lessons/PythonLessonPage';
+import { setPythonLessonData, getPythonLessonData } from './Components/pythonlessons/PythonLessonDatabase';
 
 import './styles/styles.css';
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { pythonlessonlist } from './Components/pythonlessons/PythonLessonList';
-import { db } from './fireBaseConfig';
+import { db } from '../src/fireBaseConfig.js'; // Fixed casing issue
 
-// async function fetchDataFromFirestore() {
-//   const querySnapshot = await getDocs(collection(db, "python"))
+async function fetchDataFromFirestore() {
+  const querySnapshot = await getDocs(collection(db, "python"));
 
-//   const data = [];
-//   querySnapshot.forEach((doc) => {
-//     data.push({ id: doc.id, ...doc.data()})
-//   });
-//   return data;
-// }
+  const data = [];
+  querySnapshot.forEach((doc) => {
+    data.push({ id: doc.id, ...doc.data() });
+  });
+  return data;
+}
 
 function App() {
-  // const [pythonLessonData, setPythonLessonData] = useState([]);
+  const [pythonLessonData, setPythonLessonDataState] = useState([]);
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const data = await fetchDataFromFirestore();
-  //     setPythonLessonData(data);
-  //   }
-  //   fetchData();
-  //   console.log(pythonLessonData);
-  // }, []);
- 
+  useEffect(() => {
+    async function fetchData() {
+      const data = await fetchDataFromFirestore();
+      setPythonLessonDataState(data);
+    }
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    console.log("Updated pythonLessonData:", pythonLessonData);
+  }, [pythonLessonData]);
+
   return (
-    <div className='App'>
+    <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
@@ -67,16 +71,18 @@ function App() {
           <Route index element={<CoursesPage />} />
           <Route path="intro-to-python" element={<BaseLayout />}>
             <Route index element={<LearnPythonPage />} />
-            <Route path="learn" element={<PythonLessonPage lesson={"lesson"}/>} />
-            <Route>
-            {pythonlessonlist.map((lessons) => {
-              lessons.lessons.map((name,index) => {
-                // return (
-                  <Route path={name.route} element={<PythonLessonPage lesson={name.name}/>} />
-                // );
-              })
-            })}
-            </Route>
+            <Route path="learn/:lessonId" element={<PythonLessonPage />} />
+            {pythonLessonData.map((unit) =>
+              unit.units.map((eachUnit, index) =>
+                eachUnit.unit.map((lesson, lessonIndex) => (
+                  <Route
+                    key={`${index}-${lessonIndex}`}
+                    path={lesson.route}
+                    element={<PythonLessonPage lesson={lesson.title} text={lesson.text}/>}
+                  />
+                ))
+              )
+            )}
           </Route>
         </Route>
         <Route path="pythonlive" element={<PythonLivePage />} />

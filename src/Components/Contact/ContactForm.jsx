@@ -17,7 +17,7 @@ function ContactForm() {
                         id="name"
                         type="name"
                         name="name"
-                        className='w-full'
+                        className='w-full normal-text'
                     />
                     <ValidationError
                         prefix="Email"
@@ -33,7 +33,7 @@ function ContactForm() {
                         id="email"
                         type="email"
                         name="email"
-                        className='w-full'
+                        className='w-full normal-text'
                     />
                     <ValidationError
                         prefix="Email"
@@ -49,7 +49,7 @@ function ContactForm() {
             <textarea
                 id="message"
                 name="message"
-                className='w-full message_box'
+                className='w-full message_box normal-text'
             />
             <ValidationError
                 prefix="Message"
