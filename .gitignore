@@ -11,9 +11,10 @@
 # production
 /build
 
-src\fireBaseConfig.js
-src\Components\pythonlessons\PythonLessonList.js
-src\App.jsx
+src/fireBaseConfig.js
+src/Components/pythonlessons/PythonLessonList.js
+src/App.jsx
+.env
 
 # misc
 .DS_Store
