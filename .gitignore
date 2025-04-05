@@ -14,7 +14,10 @@
 src/fireBaseConfig.js
 src/Components/pythonlessons/PythonLessonList.js
 src/App.jsx
+<<<<<<< HEAD
 .env
+=======
+>>>>>>> 1260ec817ba370d2f5a67ee8e9a7368192d6e534
 
 # misc
 .DS_Store
