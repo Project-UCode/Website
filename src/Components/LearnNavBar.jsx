@@ -30,7 +30,7 @@ export default function LearnNavBar() {
         <Link to="/home" ><div className="logo">Project UCode</div></Link>
           <ul>
             <li className="navLet">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
             </li>
             <li className="navLet">
               <Link to="/about">About</Link>

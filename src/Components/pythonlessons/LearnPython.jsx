@@ -51,7 +51,7 @@ export default function LearnPython() {
                                             return (
                                                 <div>
                                                     <p>
-                                                        <a href={lesson.route}>{lesson.name}</a>
+                                                        <a href={`/courses/intro-to-python/${lesson.route}`}>{lesson.name}</a>
                                                     </p>
                                                 </div>
                                             );
