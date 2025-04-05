@@ -1,15 +1,17 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { Sidebar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import LearnNavBar from "../../LearnNavBar";
 import Footer from "../../Footer";
+import { pythonlessonlist } from "../PythonLessonList";
 
 
-export default function PythonLessonPage({lesson , text}) {
+export default function PythonLessonPage({ lesson, text, prev, post, unit }) {
 
-    const[isOpen ,setIsOpen] = useState(false);
-    const toggle = () => setIsOpen (!isOpen);
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
 
     return (
         <>
@@ -27,92 +29,29 @@ export default function PythonLessonPage({lesson , text}) {
                         <div className="btn light desktop-btn navbuttonmini header__toggle" onClick={toggle} id="header-toggle"><i class="fa-solid fa-bars"></i></div>
                     </li>
                     <li>
-                        <a href="#" className="btn light desktop-btn navbutton"><i class="fa-solid fa-chevron-left"></i></a>
+                        <Link to={`/courses/intro-to-python/${prev}`} className="btn light desktop-btn navbutton"><i class="fa-solid fa-chevron-left"></i></Link>
                     </li>
                     <li>
-                        <a href="#" className="btn light desktop-btn navbutton"><i class="fa-solid fa-chevron-right"></i></a>
+                        <Link to={`/courses/intro-to-python/${post}`} className="btn light desktop-btn navbutton"><i class="fa-solid fa-chevron-right"></i></Link>
                     </li>
                 </ul>
             </div>
             {/* Sidebar Section */}
             <div className="">
-                <div className="coursesidebar" style={{left: isOpen ? "0" : "-100%"}} id="coursesidebar">
+                <div className="coursesidebar" style={{ left: isOpen ? "0" : "-100%" }} id="coursesidebar">
                     <div className="coursesidebar__container">
                         <div className="coursesidebar__content">
                             <div className="coursesidebar__list">
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Introduction </span>
-                                    <span className="coursesidebar__floating">Introduction </span>
-                                </a>
-
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Running </span>
-                                    <span className="coursesidebar__floating">Running </span>
-                                </a>
-
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Concepts </span>
-                                    <span className="coursesidebar__floating">Concepts </span>
-                                </a>
-
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">gdrgdrgh </span>
-                                    <span className="coursesidebar__floating">gdrgdrgh </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Codingjfju </span>
-                                    <span className="coursesidebar__floating">Codingjfju </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">ABa </span>
-                                    <span className="coursesidebar__floating">ABa </span>
-                                </a>
-                                
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">ABa </span>
-                                    <span className="coursesidebar__floating">ABa </span>
-                                </a>
-                                
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">Coding </span>
-                                    <span className="coursesidebar__floating">Coding </span>
-                                </a>
-                                <a href="#" className="coursesidebar__link">
-                                    <span className="coursesidebar__link-name">ABa </span>
-                                    <span className="coursesidebar__floating">ABa </span>
-                                </a>
+                                {Array.isArray(pythonlessonlist[unit]?.lessons) ? (
+                                    pythonlessonlist[unit].lessons.map((lesson, lessonIndex) => (
+                                        <a key={`${unit}-${lessonIndex}`} href="#" className="coursesidebar__link">
+                                            <span className="coursesidebar__link-name">{lesson.name}</span>
+                                            <span className="coursesidebar__floating">{lesson.name}</span>
+                                        </a>
+                                    ))
+                                ) : (
+                                    <p>No lessons available for this unit.</p>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -120,7 +59,7 @@ export default function PythonLessonPage({lesson , text}) {
 
                 <main className={`lessoncontent ${isOpen ? 'open' : ''}`} id="lessoncontent">
                     <h2>{lesson}</h2>
-                    <p> {text} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue mauris. Tristique risus nec feugiat in. Ultricies mi quis hendrerit dolor magna. Augue interdum velit euismod in pellentesque massa placerat. Id volutpat lacus laoreet non curabitur gravida arcu ac. Semper risus in hendrerit gravida rutrum quisque. Ut morbi tincidunt augue interdum velit. Libero enim sed faucibus turpis in eu mi bibendum neque. Ac ut consequat semper viverra nam libero justo laoreet sit. Posuere morbi leo urna molestie at. Ipsum dolor sit amet consectetur adipiscing elit. Viverra aliquet eget sit amet. Tortor posuere ac ut consequat semper. Nunc sed augue lacus viverra. Aliquet lectus proin nibh nisl condimentum. Nec feugiat in fermentum posuere. Malesuada proin libero nunc consequat interdum varius sit. Diam vulputate ut pharetra sit amet aliquam id. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
+                    <p> {unit} {text} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue mauris. Tristique risus nec feugiat in. Ultricies mi quis hendrerit dolor magna. Augue interdum velit euismod in pellentesque massa placerat. Id volutpat lacus laoreet non curabitur gravida arcu ac. Semper risus in hendrerit gravida rutrum quisque. Ut morbi tincidunt augue interdum velit. Libero enim sed faucibus turpis in eu mi bibendum neque. Ac ut consequat semper viverra nam libero justo laoreet sit. Posuere morbi leo urna molestie at. Ipsum dolor sit amet consectetur adipiscing elit. Viverra aliquet eget sit amet. Tortor posuere ac ut consequat semper. Nunc sed augue lacus viverra. Aliquet lectus proin nibh nisl condimentum. Nec feugiat in fermentum posuere. Malesuada proin libero nunc consequat interdum varius sit. Diam vulputate ut pharetra sit amet aliquam id. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
 
                         Maecenas volutpat blandit aliquam etiam erat. Gravida cum sociis natoque penatibus et. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Proin sagittis nisl rhoncus mattis rhoncus. Magna sit amet purus gravida quis blandit turpis cursus in. Ut consequat semper viverra nam libero justo. Mauris pharetra et ultrices neque ornare aenean euismod. Et ultrices neque ornare aenean euismod elementum. Diam maecenas sed enim ut sem viverra aliquet eget sit. Tellus integer feugiat scelerisque varius morbi. Facilisis volutpat est velit egestas dui. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
 

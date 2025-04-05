@@ -78,7 +78,7 @@ function App() {
                   <Route
                     key={`${index}-${lessonIndex}`}
                     path={lesson.route}
-                    element={<PythonLessonPage lesson={lesson.title} text={lesson.text}/>}
+                    element={<PythonLessonPage lesson={lesson.title} text={lesson.text} prev={lesson["prev-route"]} post={lesson["post-route"]} unit={index}/>}
                   />
                 ))
               )
