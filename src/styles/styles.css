@@ -275,6 +275,7 @@ nav {
 .lessoncontent {
   padding-left: 1lh;
   padding-right: 1lh;
+  min-height: 100vh;
 }
 
 .coursenav {
@@ -397,6 +398,7 @@ nav ul li a {
   /* transition: left .4s; */
   border-top: solid var(--dark-blue-color) 3px;
   border-right: solid var(--dark-blue-color) 3px;
+  border-radius: 0 20px 0 0;
 }
 
 .coursesidebar::after {
