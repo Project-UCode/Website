@@ -1681,6 +1681,11 @@ nav.mobile-nav,
   .syl_title {
     font-size: 50px;
     margin-bottom: 0;
+    justify-self: center;
+  }
+
+  .lessoncontent img {
+    width: 35vh;
   }
   
   .unit_module {
