@@ -15,8 +15,10 @@ export default function PythonLessonPage({ lesson, text, prev, post, unit }) {
 
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
-    const parsedText = text.replace(/\\n/g, '\n');
+    const parsedText = text.replace(/\\n/g, '\n').replace('\\n','\n');
     const markdown = parsedText
+
+
 
     return (
         <>
@@ -66,7 +68,13 @@ export default function PythonLessonPage({ lesson, text, prev, post, unit }) {
                 <main className={`lessoncontent ${isOpen ? 'open' : ''}`} id="lessoncontent">
                     <h2>{lesson}</h2>
                     <div>
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+                        <ReactMarkdown
+                            remarkPlugins={[remarkGfm]}
+                            components={{
+                                h1: ({ node, ...props }) => <h1 style={{}} {...props} />,
+                                // img: ({ node, ...props }) => <img className="courseimg" {...props} />,
+                            }}
+                        >{markdown}</ReactMarkdown>
                     </div>
                     {/* <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue mauris. Tristique risus nec feugiat in. Ultricies mi quis hendrerit dolor magna. Augue interdum velit euismod in pellentesque massa placerat. Id volutpat lacus laoreet non curabitur gravida arcu ac. Semper risus in hendrerit gravida rutrum quisque. Ut morbi tincidunt augue interdum velit. Libero enim sed faucibus turpis in eu mi bibendum neque. Ac ut consequat semper viverra nam libero justo laoreet sit. Posuere morbi leo urna molestie at. Ipsum dolor sit amet consectetur adipiscing elit. Viverra aliquet eget sit amet. Tortor posuere ac ut consequat semper. Nunc sed augue lacus viverra. Aliquet lectus proin nibh nisl condimentum. Nec feugiat in fermentum posuere. Malesuada proin libero nunc consequat interdum varius sit. Diam vulputate ut pharetra sit amet aliquam id. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
 
