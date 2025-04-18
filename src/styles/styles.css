@@ -278,6 +278,48 @@ nav {
   min-height: 100vh;
 }
 
+.lessoncontent img {
+  width: 100vh;
+} 
+
+/* Style for inline code */
+.lessoncontent code {
+  display: inline-block; /* Ensures the background wraps around the inline code */
+  background: #000218; /* Dark background for code */
+  color: #fff; /* White text color */
+  padding: 0.2rem 0.4rem; /* Add padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+  font-size: 1rem; /* Font size */
+  white-space: pre-wrap; /* Preserve whitespace and wrap text */
+  word-wrap: break-word; /* Break long words if necessary */
+  margin-bottom: 0;
+}
+
+/* Style for multi-line code blocks */
+.lessoncontent pre {
+  display: block; /* Ensures the block spans the full width */
+  background: #000218; /* Dark background for code blocks */
+  color: #fff; /* White text color */
+  padding: 1rem; /* Add padding around the block */
+  margin-bottom: 1rem; /* Add spacing below the block */
+  border-radius: 4px; /* Rounded corners */
+  font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+  font-size: 1rem; /* Font size */
+  white-space: pre-wrap; /* Preserve whitespace and wrap text */
+  word-wrap: break-word; /* Break long words if necessary */
+  overflow-x: auto; /* Add horizontal scrolling for long lines */
+}
+
+
+/* Remove background from <code> inside <pre> */
+.lessoncontent pre code {
+  background: none;
+  padding: 0;
+}
+
+
+
 .coursenav {
   grid-column: 1 / 2;
   width: 250px;
@@ -904,7 +946,8 @@ h2 {
 /* Courses Section */
 
 .courses-section {
-  background: linear-gradient(180deg, #376094 0%, #304e5f 100%);
+  /* background: linear-gradient(180deg, #376094 0%, #304e5f 100%); */
+  background: #508ab4;
   padding: 70px 0;
   padding-bottom: 120px;
   margin-top: -100px;
@@ -998,10 +1041,6 @@ border-radius: 24px;
   right: 0;
 }
 
-.lessoncontent img {
-  width: 100vh;
-}
-
 h4 {
   margin-left: 2vh;
   margin-right: 2vh;
@@ -1014,7 +1053,9 @@ h4 {
 }
 
 #whatWeDoSection {
-  background: linear-gradient(180deg, #47756f 0%, #13092e 100%);
+  /* background: linear-gradient(180deg, #47756f 0%, #13092e 100%); */
+  background: #508ab4;
+  padding: 70px;
 }
 
 /* App Section */
