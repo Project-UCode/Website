@@ -280,35 +280,55 @@ nav {
 
 .lessoncontent img {
   width: 100vh;
-} 
+}
 
 /* Style for inline code */
 .lessoncontent code {
-  display: inline-block; /* Ensures the background wraps around the inline code */
-  background: #000218; /* Dark background for code */
-  color: #fff; /* White text color */
-  padding: 0.2rem 0.4rem; /* Add padding around the text */
-  border-radius: 4px; /* Rounded corners */
-  font-family: "Courier New", Courier, monospace; /* Monospace font for code */
-  font-size: 1rem; /* Font size */
-  white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  word-wrap: break-word; /* Break long words if necessary */
+  display: inline-block;
+  /* Ensures the background wraps around the inline code */
+  background: #000218;
+  /* Dark background for code */
+  color: #fff;
+  /* White text color */
+  padding: 0.2rem 0.4rem;
+  /* Add padding around the text */
+  border-radius: 4px;
+  /* Rounded corners */
+  font-family: "Courier New", Courier, monospace;
+  /* Monospace font for code */
+  font-size: 1rem;
+  /* Font size */
+  white-space: pre-wrap;
+  /* Preserve whitespace and wrap text */
+  word-wrap: break-word;
+  /* Break long words if necessary */
   margin-bottom: 0;
 }
 
 /* Style for multi-line code blocks */
 .lessoncontent pre {
-  display: block; /* Ensures the block spans the full width */
-  background: #000218; /* Dark background for code blocks */
-  color: #fff; /* White text color */
-  padding: 1rem; /* Add padding around the block */
-  margin-bottom: 1rem; /* Add spacing below the block */
-  border-radius: 4px; /* Rounded corners */
-  font-family: "Courier New", Courier, monospace; /* Monospace font for code */
-  font-size: 1rem; /* Font size */
-  white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  word-wrap: break-word; /* Break long words if necessary */
-  overflow-x: auto; /* Add horizontal scrolling for long lines */
+  display: block;
+  /* Ensures the block spans the full width */
+  background: #000218;
+  /* Dark background for code blocks */
+  color: #fff;
+  /* White text color */
+  padding: 1rem;
+  /* Add padding around the block */
+  margin-bottom: 1rem;
+  /* Add spacing below the block */
+  border-radius: 4px;
+  /* Rounded corners */
+  font-family: "Courier New", Courier, monospace;
+  /* Monospace font for code */
+  font-size: 1rem;
+  /* Font size */
+  white-space: pre-wrap;
+  /* Preserve whitespace and wrap text */
+  word-wrap: break-word;
+  /* Break long words if necessary */
+  overflow-x: auto;
+  /* Add horizontal scrolling for long lines */
 }
 
 
@@ -559,13 +579,68 @@ a.coursesidebar__link:hover {
 
 .ateam {
   justify-content: center;
-  margin-bottom: 8vh;
+  /* margin-bottom: 8vh; */
 }
 
 .ateam h2 {
   font-size: 8vh;
 }
 
+.teamSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 40px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.teamSection .officer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.teamSection .officer .name {
+  font-size: 3em;
+}
+
+.teamSection .officer .position {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.teamSection .officer img {
+  width: 10lh;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+
+
+.teamSection .officer:nth-child(1),
+.teamSection .officer:nth-child(2) {
+  grid-column: span 2;
+}
+
+.teamSection .officer:nth-child(3),
+.teamSection .officer:nth-child(4),
+.teamSection .officer:nth-child(5),
+.teamSection .officer:nth-child(6) {
+  grid-column: span 1;
+}
+
+.teamSection .officer:nth-child(1) img,
+.teamSection .officer:nth-child(2) img {
+  width: 15lh;
+}
 
 /* Achievement Cards */
 
@@ -1637,6 +1712,28 @@ nav.mobile-nav,
     flex-direction: column-reverse;
   }
 
+  .teamSection {
+    grid-template-columns: repeat(1, 1fr);
+    /* 2 columns for smaller screens */
+  }
+
+  .teamSection .officer {
+    padding-top: 0;
+  }
+
+  .teamSection .officer img {
+    width: 15lh;
+  }
+
+  .teamSection .officer:nth-child(1),
+  .teamSection .officer:nth-child(2),
+  .teamSection .officer:nth-child(3),
+  .teamSection .officer:nth-child(4),
+  .teamSection .officer:nth-child(5),
+  .teamSection .officer:nth-child(6) {
+    grid-column: span 1;
+  }
+
   .event_left {
     flex-direction: column-reverse;
     gap: 0lh
@@ -1728,7 +1825,7 @@ nav.mobile-nav,
   .lessoncontent img {
     width: 35vh;
   }
-  
+
   .unit_module {
     display: flex;
     flex-direction: column;
@@ -1743,7 +1840,7 @@ nav.mobile-nav,
     margin-top: 1.5lh;
     gap: 2lh;
   }
-  
+
   .lessons_grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));

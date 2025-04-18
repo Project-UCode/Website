@@ -2,68 +2,88 @@ import aboutStyles from './compStyles/about.module.css';
 import Animations from './Animations';
 import ScrollToTop from './ScrollToTop';
 
+import { officersData } from './OfficersData';
+
 export default function About() {
     return (
         <>
-        <ScrollToTop />
-        <Animations />
-        <header id="aboutHeader" className={aboutStyles.header}>
-            <div className="wrapper">
-            <div id="aboutHeroSection" className="hero-section">
-                <div className="middle">
-                <h1 id="abt_txt">About Us</h1>
+            <ScrollToTop />
+            <Animations />
+            <header id="aboutHeader" className={aboutStyles.header}>
+                <div className="wrapper">
+                    <div id="aboutHeroSection" className="hero-section">
+                        <div className="middle">
+                            <h1 id="abt_txt">About Us</h1>
+                        </div>
+                    </div>
                 </div>
+            </header>
+
+            {/* <!-- End of the header section --> */}
+
+            <div className="wrapper about-mission hiddenimgleft">
+                <section className="testimonials-section extra_info_section">
+                    <div className="left">
+                        <img src="Images/ucodemission.png" alt="mission-photo" />
+                    </div>
+
+                    <div className="right">
+                        <h2>Our Mission</h2>
+
+                        <div className="features">
+                            <p>
+                                Our goal at Project UCode is to provide a free, global, and inclusive educational platform where anyone can learn about Computer Science.
+                                Moreover, we hope to bridge the digital divide by providing technological access to people around the world currently without means to access the internet.
+                            </p>
+
+                            <p>
+                                With your help, either as a learner or volunteer, we hope to do just that!
+                            </p>
+                        </div>
+
+                        <a href="#" className="btn light desktop-btn">Donate Today!</a>
+                    </div>
+                </section>
             </div>
-            </div>
-        </header>
 
-        {/* <!-- End of the header section --> */}
+            {/* <!-- End of testimonials Section --> */}
 
-        <div className="wrapper about-mission hiddenimgleft">
-            <section className="testimonials-section extra_info_section">
-            <div className="left">
-                <img src="Images/ucodemission.png" alt="mission-photo" />
-            </div>
-
-            <div className="right">
-                <h2>Our Mission</h2>
-
-                <div className="features">
-                <p>
-                    Our goal at Project UCode is to provide a free, global, and inclusive educational platform where anyone can learn about Computer Science.
-                    Moreover, we hope to bridge the digital divide by providing technological access to people around the world currently without means to access the internet.
-                </p>
-
-                <p>
-                    With your help, either as a learner or volunteer, we hope to do just that!
-                </p>
+            <section id="whatWeDoSection" className="courses-section">
+                <div className='hiddenimgleft'>
+                    <h2 className="light">What We Do?</h2>
+                    <h4 className="whatTxt">
+                        <b>Free</b> workshops over various programming languages and computer science concepts. <br />
+                        <b>Free</b> online courses over various technical topics. <br />
+                        In school volunteering events and tutoring programs. <br />
+                        Spread educational CS content throughout social media. - Learn with UCode <br />
+                    </h4>
                 </div>
-
-                <a href="#" className="btn light desktop-btn">Donate Today!</a>
-            </div>
-            </section>
-        </div>
-
-        {/* <!-- End of testimonials Section --> */}
-
-        <section id="whatWeDoSection" className="courses-section">
-            <div className='hiddenimgleft'>
-                <h2 className="light">What We Do?</h2>
-                <h4 className="whatTxt">
-                <b>Free</b> workshops over various programming languages and computer science concepts. <br />
-                <b>Free</b> online courses over various technical topics. <br />
-                In school volunteering events and tutoring programs. <br />
-                Spread educational CS content throughout social media. - Learn with UCode <br />
-                </h4>
-            </div>
-        </section>
-
-        <div id='pushUp'>
-            <section className="testimonials-section ateam abtaTeam">
-            <h2 id="teamTitle">Our Team</h2>
             </section>
 
-            <section className="testimonials-section team abtTeam">
+            <div id='pushUp'>
+                <section className="testimonials-section ateam abtaTeam">
+                    <h2 id="teamTitle">Our Team</h2>
+                </section>
+                <div className='teamSection'>
+                {officersData.map((officer, index) => {
+                    return (
+                        <section key={index} className="officer">
+                            <div className="">
+                                <img src={officer.image} alt={`${officer.name}-photo`} />
+                            </div>
+                            <div className=" ">
+                                <h2 className='name'>{officer.name}</h2>
+                                <h2 className='position'>{officer.position}</h2>
+                                <div className="">
+                                    <p>{officer.description}</p>
+                                </div>
+                            </div>
+                        </section>
+                    );
+                })}
+                </div>
+            </div>
+            {/* <section className="testimonials-section team abtTeam">
             <div className="left">
                 <img src="Images/akhilphoto.png" alt="akhil-photo" />
             </div>
@@ -93,8 +113,8 @@ export default function About() {
                 </p>
                 </div>
             </div>
-            </section>
-        </div>
+            </section> */}
+
         </>
     )
 }
