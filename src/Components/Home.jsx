@@ -1,6 +1,7 @@
 import homeStyles from './compStyles/home.module.css';
 import Animations from './Animations';
 import ScrollToTop from './ScrollToTop';
+import NumAnimation from './NumAnimation';
 
 export default function Home() {
     return (
@@ -38,8 +39,14 @@ export default function Home() {
         </header>
         {/* <!-- End of the header section --> */}
 
+        <div className='quickinfoSection'>
+            <div className='NumElement'><span className='NumCounterElement'><NumAnimation from={0} to={4000}/>+</span><br />Students Reached</div>
+            <div className='NumElement'><span className='NumCounterElement'><NumAnimation from={0} to={1000}/>+</span><br />Followers</div>
+            <div className='NumElement'><span className='NumCounterElement'><NumAnimation from={0} to={24}/></span><br />International Chapters</div>
+        </div>
+
         <div className="wrapper about-mission hiddenimgleft">
-        <section className="testimonials-section extra_info_section">
+        <div className="testimonials-section extra_info_section home-testimonials-section">
             <div className="left homeLeft">
                 <img className="who-are-we-image" id="learn-home" src="Images/ucodelearn.png" alt="" />
             </div>
@@ -60,7 +67,7 @@ export default function Home() {
             <a href="about" className="btn light desktop-btn">Learn More</a>
             </div>
 
-        </section>
+        </div>
         </div>
 
         {/* <!-- End of testimonials Section --> */}

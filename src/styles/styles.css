@@ -444,6 +444,47 @@ nav ul li a {
   text-decoration: none;
 }
 
+.full_syllabus {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.unit_module {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.unit_title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.lessons_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.lesson_card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lesson_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(169, 200, 218)
+}
+
 /* Course Sidebars */
 
 .coursesidebar {
@@ -745,6 +786,30 @@ section p {
   margin: 12px 0;
 }
 
+.home-testimonials-section {
+  margin-top: 2lh;
+}
+
+.quickinfoSection {
+  display: flex;
+  font-size: 3vh;
+  padding: 1lh;
+  gap: 7em;
+  justify-content: center;
+  background-color: var(--dark-blue-color);
+  color: white;
+  text-align: center;
+}
+
+.quickinfoSection .NumElement {
+  text-align: center;
+}
+
+.quickinfoSection .NumCounterElement {
+  font-weight: bold;
+  font-size: 5vh;
+}
+
 .testimonials-section {
   display: flex;
   gap: 100px;
@@ -868,7 +933,7 @@ section p {
 
 .lessons_grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 /* Contact Form */
@@ -1640,6 +1705,11 @@ nav.mobile-nav,
     opacity: 0;
     pointer-events: none;
     transition: all 400ms ease;
+  }
+
+  .quickinfoSection {
+    flex-direction: column;
+    gap: 2em;
   }
 
   .courses-section .course-cards {

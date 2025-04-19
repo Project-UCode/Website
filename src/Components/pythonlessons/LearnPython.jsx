@@ -34,6 +34,7 @@ export default function LearnPython() {
                             <p>
                                 This approximately 10 hour course will teach of the basics of Python, ranging from print statements to functions.
                             </p>
+                            <a href="intro-to-python/welcome" className="btn light desktop-btn">Start Course Now!</a>
                         </div>
                     </div>
                 </section>
@@ -41,26 +42,26 @@ export default function LearnPython() {
                 <section id="chapter-testimonials-section" className="course-info">
                     <h1 className="syl_title">Courseware</h1>
                     <div className="full_syllabus">
-                    {pythonlessonlist.map((item, index) => {
-                        return (
-                            <div>
-                                <section id="" className="unit_module">
-                                    <h2>{item.unit}: {item.title}</h2>
+                        {pythonlessonlist.map((item, index) => {
+                            return (
+                                <div key={index} className="unit_module">
+                                    <h2 className="unit_title">{item.unit}: {item.title}</h2>
                                     <div className="lessons_grid">
-                                        {item.lessons.map((lesson) => {
+                                        {item.lessons.map((lesson, lessonIndex) => {
                                             return (
-                                                <div>
-                                                    <p>
-                                                        <a href={`/courses/intro-to-python/${lesson.route}`}>{lesson.name}</a>
-                                                    </p>
-                                                </div>
+                                                <a href={`/courses/intro-to-python/${lesson.route}`} className="lesson_link">
+                                                    <div key={lessonIndex} className="lesson_card">
+                                                        <p>
+                                                            {lesson.name}
+                                                        </p>
+                                                    </div>
+                                                </a>
                                             );
                                         })}
                                     </div>
-                                </section>
-                            </div>
-                        );
-                    })}
+                                </div>
+                            );
+                        })}
                     </div>
                 </section>
 
