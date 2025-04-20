@@ -52,10 +52,10 @@ export default function PythonLessonPage({ lesson, text, prev, post, unit }) {
                             <div className="coursesidebar__list">
                                 {Array.isArray(pythonlessonlist[unit]?.lessons) ? (
                                     pythonlessonlist[unit].lessons.map((lesson, lessonIndex) => (
-                                        <a key={`${unit}-${lessonIndex}`} href={lesson.route} className="coursesidebar__link">
+                                        <Link key={`${unit}-${lessonIndex}`} to={`/courses/intro-to-python/${lesson.route}`} className="coursesidebar__link">
                                             <span className="coursesidebar__link-name">{lesson.name}</span>
                                             <span className="coursesidebar__floating">{lesson.name}</span>
-                                        </a>
+                                        </Link>
                                     ))
                                 ) : (
                                     <p>No lessons available for this unit.</p>

@@ -66,14 +66,14 @@ export default function LearnNavBar() {
 
         <nav className="mobile-nav 'learnnavbar'">
           <div className="logo">Project UCode</div>
-          <div className="menu-icon" onClick={toggleMenu}>
-            <img src="../public/Images/menu-icon.svg" alt="Menu Icon" />
-          </div>
+          {/* <div className="menu-icon" onClick={toggleMenu}>
+            <img src="/Images/menu-icon.svg" alt="Menu Icon" />
+          </div> */}
         </nav>
 
         <div className={`mobile-menu-container ${active ? 'active' : ''}`} id="mobileMenu">
           <div className="close-icon" onClick={toggleMenu}>
-            <img src="../Images/close-icon.svg" alt="Close Icon" />
+            <img src="/Images/close-icon.svg" alt="Close Icon" />
           </div>
           <ul>
             <li><Link to="/home">Home</Link></li>
