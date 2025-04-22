@@ -1798,6 +1798,7 @@ nav.mobile-nav,
 
   .coursesidebar {
     top: 200px;
+    z-index: 500;
   }
 
   .mobile-menu-container.active .close-icon {
