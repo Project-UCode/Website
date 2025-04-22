@@ -27,7 +27,7 @@ export default function LearnNavBar() {
     <>
       <div className="learnnavwrapper">
         <nav className='learnnavbar'>
-        <Link to="/home" ><div className="logo">Project UCode</div></Link>
+        <Link to="/" ><div className="logo">Project UCode</div></Link>
           <ul>
             <li className="navLet">
                 <Link to="/">Home</Link>
@@ -47,7 +47,7 @@ export default function LearnNavBar() {
               </ul> */}
             </li>
             <li className="navLet">
-              <a href="#">Donate</a>
+            <a href="https://gofund.me/1c048cf5" target="_blank">Donate</a>
             </li>
             <li className="navLet">
             <Link to="/contact" target="_blank">Contact Us</Link>

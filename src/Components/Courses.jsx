@@ -1,4 +1,5 @@
 import ScrollToTop from "./ScrollToTop";
+import { Link } from "react-router-dom";
 
 export default function Courses() {
     return (
@@ -32,7 +33,7 @@ export default function Courses() {
                     </p>
                     </div>
 
-                    <a href="/courses/intro-to-python" target="" className="btn light desktop-btn">Coming Soon</a>
+                    <Link to="/courses/intro-to-python" target="" className="btn light desktop-btn">Get Started</Link>
                 </div>
             </section>
 

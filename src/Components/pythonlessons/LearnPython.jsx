@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { Sidebar } from "lucide-react";
+import { Link } from "react-router-dom";
 import { pythonlessonlist } from "./PythonLessonList";
+import ScrollToTop from "../ScrollToTop";
 
 
 export default function LearnPython() {
 
     return (
         <>
+            <ScrollToTop />
             <header id="pythonliveHeader">
                 <div className="wrapper">
                     <div id="aboutHeroSection" className="hero-section">
@@ -34,7 +37,7 @@ export default function LearnPython() {
                             <p>
                                 This approximately 10 hour course will teach of the basics of Python, ranging from print statements to functions.
                             </p>
-                            <a href="intro-to-python/welcome" className="btn light desktop-btn">Start Course Now!</a>
+                            <Link to="/courses/intro-to-python/welcome" className="btn light desktop-btn">Start Course Now!</Link>
                         </div>
                     </div>
                 </section>
@@ -49,13 +52,13 @@ export default function LearnPython() {
                                     <div className="lessons_grid">
                                         {item.lessons.map((lesson, lessonIndex) => {
                                             return (
-                                                <a href={`/courses/intro-to-python/${lesson.route}`} className="lesson_link">
+                                                <Link to={`/courses/intro-to-python/${lesson.route}`} className="lesson_link">
                                                     <div key={lessonIndex} className="lesson_card">
                                                         <p>
                                                             {lesson.name}
                                                         </p>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             );
                                         })}
                                     </div>
