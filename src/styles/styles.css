@@ -334,6 +334,27 @@ nav {
   /* Add horizontal scrolling for long lines */
 }
 
+.exampleContent {
+  display: block;
+  background: #000218;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  /* Add spacing below the block */
+  border-radius: 4px;
+  /* Rounded corners */
+  font-family: "Courier New", Courier, monospace;
+  /* Monospace font for code */
+  font-size: 1rem;
+  /* Font size */
+  white-space: pre-wrap;
+  /* Preserve whitespace and wrap text */
+  word-wrap: break-word;
+  /* Break long words if necessary */
+  overflow-x: auto;
+  /* Add horizontal scrolling for long lines */
+}
+
 
 /* Remove background from <code> inside <pre> */
 .lessoncontent pre code {

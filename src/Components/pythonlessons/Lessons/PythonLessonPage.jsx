@@ -26,8 +26,8 @@ export default function PythonLessonPage({ lesson, text, prev, post, unit }) {
     const markdown = parsedText
 
     useEffect(() => {
-        Prism.highlightAll();
-    }, []);
+        Prism.highlightAll(); // Reapply syntax highlighting
+    }, [markdown, isOpen]);
 
     return (
         <>

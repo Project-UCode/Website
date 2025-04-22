@@ -47,10 +47,33 @@ function MarkdownRender({ content }) {
                 rehypePlugins={[rehypeRaw]}
                 components={{
                     // codeeditor: ({ node, ...props }) => <CodeEditor {...props} />,
-                    // quiz: ({ node, ...props }) => <Quiz {...props} />,
+                    // quiz: ({ node, children }) => {
+                        // Convert everything to a flat string
+                        // const quizText = children
+                        //   .map(child => {
+                        //     // Handle string children
+                        //     if (typeof child === 'string') return child;
+                        //     // Handle JSX elements (e.g., <p>Question</p>)
+                        //     if (typeof child === 'object' && child?.props?.children) {
+                        //       return Array.isArray(child.props.children)
+                        //         ? child.props.children.join('')
+                        //         : child.props.children;
+                        //     }
+                        //     return '';
+                        //   })
+                        //   .join('')
+                        //   .replace(/\\n/g, '\n'); // Convert literal \n to real newlines
+
+                    //     return <Quiz>{children}</Quiz>;
+                    // },
+                    example: ({ node, children }) => {
+                        return <div className='exampleContent'>{children}</div>;
+                    },
                     code({ node, inline, className, children, ...props }) {
                         const match = /language-(\w+)/.exec(className || "");
                         const codeString = String(children).replace(/\n$/, "");
+
+                        // const [copied, setCopied] = useState(false);
 
                         const handleCopy = () => {
                             navigator.clipboard.writeText(codeString).then(() => {
