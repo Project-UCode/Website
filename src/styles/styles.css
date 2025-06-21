@@ -380,6 +380,7 @@ nav {
   font-size: 0.75rem;
   border-radius: 0.25rem;
   font-family: "Poppins";
+  cursor: pointer;
 }
 
 .code-block:hover .copy-btn {

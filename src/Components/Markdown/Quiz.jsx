@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 
+// Function to parse quiz content from markdown
 const parseQuizBlock = (text) => {
-  const lines = text.split("\n").filter(Boolean);
+  const lines = text.split("\n").filter(Boolean); // Split into lines and remove empty lines
   const questions = [];
 
   let currentQuestion = null;
 
   lines.forEach((line) => {
     if (line.startsWith("Question:")) {
-      if (currentQuestion) questions.push(currentQuestion);
+      // Start a new question
+      if (currentQuestion) questions.push(currentQuestion); // Push the previous question
       currentQuestion = {
         question: line.replace("Question:", "").trim(),
         options: [],
       };
     } else if (line.startsWith("- [")) {
+      // Add an option to the current question
       const correct = line.startsWith("- [x]");
-      const text = line.replace(/- \[.\] /, "");
+      const text = line.replace(/- \[.\] /, "").trim();
       currentQuestion?.options.push({ text, correct });
     }
   });
 
-  if (currentQuestion) questions.push(currentQuestion);
+  if (currentQuestion) questions.push(currentQuestion); // Push the last question
   return questions;
 };
 
@@ -49,11 +52,11 @@ function Quiz({ children }) {
   }, 0);
 
   return (
-    <div className="my-6 p-4 border border-purple-400 rounded-md bg-purple-50">
+    <div className="quiz-container">
       {parsedQuestions.map((q, qIdx) => (
-        <div key={qIdx} className="mb-6">
-          <p className="font-semibold mb-2">{q.question}</p>
-          <ul className="space-y-2">
+        <div key={qIdx} className="quiz-question">
+          <p className="font-semibold">{q.question}</p>
+          <ul>
             {q.options.map((opt, oIdx) => {
               const selected = selectedOptions[qIdx] === oIdx;
               const correct = opt.correct;
@@ -71,7 +74,9 @@ function Quiz({ children }) {
                 <li
                   key={oIdx}
                   onClick={() => handleSelect(qIdx, oIdx)}
-                  className={`p-2 rounded border cursor-pointer ${selected ? "border-purple-600" : "border-gray-300"} ${resultColor}`}
+                  className={`p-2 rounded border cursor-pointer ${
+                    selected ? "border-purple-600" : "border-gray-300"
+                  } ${resultColor}`}
                 >
                   {opt.text}
                 </li>
@@ -83,7 +88,7 @@ function Quiz({ children }) {
       <button
         onClick={handleSubmit}
         disabled={submitted}
-        className="px-4 py-2 bg-purple-600 text-white text-sm rounded disabled:opacity-50"
+        className="submit-btn"
       >
         {submitted ? `Score: ${score}/${parsedQuestions.length}` : "Submit Quiz"}
       </button>

@@ -17,7 +17,7 @@ import 'prismjs/components/prism-python';
 // import 'prismjs/components/prism-cpp';
 
 // import CodeEditor from './CodeEditor';
-// import Quiz from './Quiz';
+import Quiz from './Quiz';
 
 function MarkdownRender({ content }) {
 
@@ -47,25 +47,9 @@ function MarkdownRender({ content }) {
                 rehypePlugins={[rehypeRaw]}
                 components={{
                     // codeeditor: ({ node, ...props }) => <CodeEditor {...props} />,
-                    // quiz: ({ node, children }) => {
-                        // Convert everything to a flat string
-                        // const quizText = children
-                        //   .map(child => {
-                        //     // Handle string children
-                        //     if (typeof child === 'string') return child;
-                        //     // Handle JSX elements (e.g., <p>Question</p>)
-                        //     if (typeof child === 'object' && child?.props?.children) {
-                        //       return Array.isArray(child.props.children)
-                        //         ? child.props.children.join('')
-                        //         : child.props.children;
-                        //     }
-                        //     return '';
-                        //   })
-                        //   .join('')
-                        //   .replace(/\\n/g, '\n'); // Convert literal \n to real newlines
-
-                    //     return <Quiz>{children}</Quiz>;
-                    // },
+                    quiz: ({ node, children }) => {
+                        return <Quiz>{children}</Quiz>;
+                    },
                     example: ({ node, children }) => {
                         return <div className='exampleContent'>{children}</div>;
                     },
