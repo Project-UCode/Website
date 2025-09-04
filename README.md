@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+
+# Project UCode Application
+
+Our goal at Project UCode is to provide a free, global, and inclusive educational platform where anyone can learn about Computer Science. Moreover, we hope to bridge the digital divide by providing technological access to people around the world currently without means to access the internet.
+
+This application contains information regarding Project UCode's work and hosted activities. This application also contains Project UCode's interactive courseware and live lesson assistance pages. 
+
+### Home Page
+<img width="1347" height="874" alt="image" src="https://github.com/user-attachments/assets/23775c84-f16c-4678-972d-8672d9df47ae" />
+
+### Course Module Example Page
+<img width="1343" height="839" alt="image" src="https://github.com/user-attachments/assets/08602d92-7111-42c0-b4ef-e2b330bbefd3" />
+
+# Getting Started with Running the Application Files
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +81,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
