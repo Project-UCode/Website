@@ -1,5 +1,5 @@
 
-# Project UCode Application
+# Project UCode Online Platform
 
 Our goal at Project UCode is to provide a free, global, and inclusive educational platform where anyone can learn about Computer Science. Moreover, we hope to bridge the digital divide by providing technological access to people around the world currently without means to access the internet.
 
